@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nasakhi — About</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../aboutcss/overview.css" />
+</head>
+<body>
+
+  <div class="root">
+
+    <header id="site-header">
+      <nav class="nav-inner">
+        <a href="#top" class="logo">
+          <img src="../images/header.png" alt="Nasakhi logo" class="logo-img" />
+          <div class="logo-text">
+            <span class="logo-name">NASAKHI</span>
+          </div>
+        </a>
+
+        <div class="desktop-nav" id="desktop-nav">
+          <div class="nav-item">
+            <button class="nav-btn">
+              <a href="../index.html" class="nav-anchor">Home</a>
+            </button>
+          </div>
+
+          <div class="nav-item has-dropdown" data-dropdown="about">
+            <button class="nav-btn">
+              About
+              <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </button>
+            <div class="dropdown" id="dropdown-about">
+              <a href="index.html#partners" class="dropdown-link">Partners</a>
+              <a href="team.html" class="dropdown-link">Team</a>
+            </div>
+          </div>
+
+          <div class="nav-item has-dropdown" data-dropdown="projects">
+            <button class="nav-btn">
+              Projects
+              <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </button>
+            <div class="dropdown" id="dropdown-projects">
+              <a href="../index.html#projects" class="dropdown-link">Multi-storey Buildings</a>
+              <a href="../index.html#projects" class="dropdown-link">Individual Homes</a>
+              <a href="../index.html#projects" class="dropdown-link">Commercial Buildings</a>
+              <a href="../index.html#projects" class="dropdown-link">Reconstructions</a>
+            </div>
+          </div>
+
+          <div class="nav-item">
+            <button class="nav-btn">
+              <a href="../index.html#services" class="nav-anchor">Services</a>
+            </button>
+          </div>
+
+          <div class="nav-item">
+            <button class="nav-btn">
+              <a href="../index.html#contact" class="nav-anchor">Contact</a>
+            </button>
+          </div>
+
+          <button class="lang-btn" id="lang-btn">GE</button>
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <svg class="icon-menu" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <line x1="4" y1="8" x2="20" y2="8" stroke="currentColor" stroke-width="1.5" />
+            <line x1="4" y1="14" x2="20" y2="14" stroke="currentColor" stroke-width="1.5" />
+            <line x1="4" y1="20" x2="20" y2="20" stroke="currentColor" stroke-width="1.5" />
+          </svg>
+          <svg class="icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display:none">
+            <path d="M6 6L18 18M6 18L18 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+        </button>
+      </nav>
+
+      <!-- MOBILE MENU PANEL -->
+      <div class="mobile-menu" id="mobile-menu" style="display:none">
+        <a href="../index.html" class="mobile-link">Home</a>
+
+        <div class="mobile-nav-group">
+          <button class="mobile-toggle" type="button" aria-expanded="false">
+            <span>About</span>
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+              <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+          </button>
+          <div class="mobile-submenu">
+            <a href="index.html#partners" class="mobile-link">Partners</a>
+            <a href="team.html" class="mobile-link">Team</a>
+          </div>
+        </div>
+
+        <div class="mobile-nav-group">
+          <button class="mobile-toggle" type="button" aria-expanded="false">
+            <span>Projects</span>
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+              <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+          </button>
+          <div class="mobile-submenu">
+            <a href="../index.html#projects" class="mobile-link">Multi-storey Buildings</a>
+            <a href="../index.html#projects" class="mobile-link">Individual Homes</a>
+            <a href="../index.html#projects" class="mobile-link">Commercial Buildings</a>
+            <a href="../index.html#projects" class="mobile-link">Reconstructions</a>
+          </div>
+        </div>
+
+        <a href="../index.html#services" class="mobile-link">Services</a>
+        <a href="../index.html#contact" class="mobile-link">Contact</a>
+      </div>
+    </header>
+    <!-- ══════════════════════════════════════════════════════ -->
+
+
+    <!-- ═══════════════════ HERO ════════════════════════════ -->
+    <section class="hero">
+      <div class="hero-bg">
+        <img src="../images/overview.jpg" alt="Nasakhi — about us" />
+        <div class="hero-gradient"></div>
+      </div>
+      <div class="hero-side-label">
+        <div class="hero-line"></div>
+        <span>ნასახი · 2008</span>
+      </div>
+    </section>
+    <!-- ══════════════════════════════════════════════════════ -->
+
+
+    <!-- ═══════════════════ MAIN CONTENT ════════════════════ -->
+    <section class="main-content">
+      <div class="content-col">
+
+        <!-- Page title -->
+        <h1 class="page-title">
+          Shortly About Us
+          <span class="title-sub">Who we are and what services we offer</span>
+        </h1>
+
+        <!-- Summary label -->
+        <div class="summary-label">Summary</div>
+
+        <!-- Text blocks -->
+        <div class="text-blocks">
+
+          <!-- Block 1 -->
+          <div class="block-1">
+            <p class="p-lead">
+              Our project team is comprised of highly qualified specialists with extensive and diverse
+              experience in civil and industrial design. This experience allows us to manage processes
+              smoothly and deliver innovative, optimal, and client-oriented solutions.
+            </p>
+            <p>
+              Our expertise includes the execution of the structural part of projects using modern software
+              such as AutoCAD (for engineering drawings), Lira (for structural analysis), Revit (for BIM
+              modeling), and others — ensuring the structural part is completed with quality and in full
+              compliance with architectural requirements.
+            </p>
+            <p>
+              Responsibility, adherence to the highest safety standards, and continuous development are
+              integral parts of our company philosophy.
+            </p>
+          </div>
+
+          <!-- Block 2 — Main Areas -->
+          <div class="block-2">
+            <h3>Main Areas of Focus</h3>
+            <p>
+              Our main areas cover civil and industrial projects, which includes the structural design of
+              multi-Storey residential buildings, Individual houses, Reconstruction and other commercial or
+              Public Buildings.
+            </p>
+            <p class="p-light">
+              We also offer Supervision on site and consulting services to ensure quality execution of
+              projects, based on the developed drawings.
+            </p>
+
+            <!-- Service tags -->
+            <div class="tags">
+              <span class="tag">Multi-Storey Buildings</span>
+              <span class="tag">Individual Houses</span>
+              <span class="tag">Commercial Buildings</span>
+              <span class="tag">Reconstructions</span>
+              <span class="tag">Supervision on Site</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- ══════════════════════════════════════════════════════ -->
+
+
+    <!-- ═══════════════════ TOOLS STRIP ═════════════════════ -->
+    <div class="tools-strip">
+      <div class="tools-grid">
+        <div class="tool-item">
+          <div class="tool-name">AutoCAD</div>
+          <div class="tool-desc">Engineering Drawings</div>
+        </div>
+        <div class="tool-item tool-mid">
+          <div class="tool-name">Lira</div>
+          <div class="tool-desc">Structural Analysis</div>
+        </div>
+        <div class="tool-item tool-last">
+          <div class="tool-name">Revit</div>
+          <div class="tool-desc">BIM Modeling</div>
+        </div>
+      </div>
+    </div>
+    <!-- ══════════════════════════════════════════════════════ -->
+
+
+    <!-- ═══════════════════ CTA ══════════════════════════════ -->
+    <div class="cta-block">
+      <h2 class="cta-heading">Our Portfolio includes over 1,000 Completed Projects.</h2>
+    </div>
+    <!-- ══════════════════════════════════════════════════════ -->
+
+
+    <!-- ═══════════════════ FOOTER ══════════════════════════ -->
+    <footer class="footer">
+  <div class="footer-rule"></div>
+
+  <div class="footer-inner">
+    <div class="footer-grid">
+  
+      <div class="footer-col footer-brand">
+        <img
+          src="https://media.base44.com/images/public/6a5c90ac8ccd38069bd9f92d/cec4d00aa_250724_P_1.png"
+          alt="NASAKHI logo"
+          class="footer-logo"
+        />
+        <p class="footer-brand-text">
+          Complete structural services — from structural design to author supervision. Tbilisi, Georgia.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Contact</h4>
+        <a href__="tel:+995511222442" class="footer-link">+995 511 222 442</a>
+        <a href__="mailto:office@nasakhi.com" class="footer-link">office@nasakhi.com</a>
+        <p class="footer-text">
+          28 Kvemo Azhara St,<br />
+          Tbilisi 0186 
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Navigation</h4>
+        <a href__="#about" class="footer-link">About</a>
+        <a href__="#services" class="footer-link">Services</a>
+        <a href__="#portfolio" class="footer-link">Projects</a>
+        <a href__="#contact" class="footer-link">Contact</a>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Working Hours</h4>
+        <p class="footer-text">Mon–Fri: 09:00–19:00</p>
+        <p class="footer-text">Saturday: 12:00–18:00</p>
+        <p class="footer-text">Sunday: Closed</p>
+
+        <div class="footer-social">
+          <a href__="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-link">Facebook</a>
+          <a href__="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-link">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+    <!-- ══════════════════════════════════════════════════════ -->
+
+  </div><!-- /root -->
+
+  <script>
+    // Scroll — header background
+    const header = document.getElementById('site-header')
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 60)
+    }, { passive: true })
+
+    // Hamburger toggle
+    const hamburger = document.getElementById('hamburger')
+    const mobileMenu = document.getElementById('mobile-menu')
+    const iconMenu   = hamburger.querySelector('.icon-menu')
+    const iconClose  = hamburger.querySelector('.icon-close')
+    hamburger.addEventListener('click', () => {
+      const open = !mobileMenu.classList.contains('open')
+      mobileMenu.classList.toggle('open', open)
+      mobileMenu.style.display = open ? 'block' : 'none'
+      iconMenu.style.display   = open ? 'none'  : 'block'
+      iconClose.style.display  = open ? 'block' : 'none'
+    })
+
+    // Mobile submenu toggles
+    document.querySelectorAll('.mobile-toggle').forEach((toggle) => {
+      toggle.addEventListener('click', () => {
+        const group = toggle.parentElement
+        const isOpen = group.classList.contains('open')
+
+        document.querySelectorAll('.mobile-nav-group').forEach((item) => {
+          const isCurrent = item === group
+          item.classList.toggle('open', isCurrent && !isOpen)
+          const btn = item.querySelector('.mobile-toggle')
+          if (btn) {
+            btn.setAttribute('aria-expanded', String(isCurrent && !isOpen))
+          }
+        })
+      })
+    })
+
+    // Close menu when a mobile link is clicked
+    document.querySelectorAll('.mobile-link').forEach((link) => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('open')
+        mobileMenu.style.display = 'none'
+        iconMenu.style.display = 'block'
+        iconClose.style.display = 'none'
+      })
+    })
+
+    // Dropdown hover
+    document.querySelectorAll('.has-dropdown').forEach(item => {
+      const dropdown = item.querySelector('.dropdown')
+      item.addEventListener('mouseenter', () => dropdown.style.display = 'block')
+      item.addEventListener('mouseleave', () => dropdown.style.display = 'none')
+    })
+
+    // Language toggle
+    const langBtn = document.getElementById('lang-btn')
+    langBtn.addEventListener('click', () => {
+      langBtn.textContent = langBtn.textContent === 'GE' ? 'EN' : 'GE'
+    })
+  </script>
+
+</body>
+</html>
