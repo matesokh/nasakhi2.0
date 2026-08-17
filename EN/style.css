@@ -712,7 +712,7 @@ nav {
 
 
 .footer-logo {
-  height: 4.0rem;
+  height: 4.5rem;
   width: auto;
   object-fit: contain;
   margin-bottom: 1.5rem;
@@ -730,7 +730,7 @@ nav {
 
 .footer-heading {
   font-family: 'IBM Plex Mono', ui-monospace, monospace;
-  font-size: 0.650rem;      
+  font-size: 0.750rem;      
   font-weight: 900;
   letter-spacing: 0.3em;
   text-transform: uppercase;
