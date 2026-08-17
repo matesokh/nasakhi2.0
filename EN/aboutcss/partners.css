@@ -249,8 +249,33 @@ body {
   gap: 48px;
   align-items: end;
 }
-@media (min-width: 1024px) { .hero-inner { grid-template-columns: repeat(12, 1fr); } }
 
+@media (max-width: 900px) {
+  .hero-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .hero-desc {
+    max-width: 100%;
+    border-left: none;
+    border-top: 1px solid #C4955A;
+    padding-inline: 0;
+    padding-top: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-inner {
+    gap: 20px;
+  }
+
+  .hero-title {
+    font-size: 56px;
+    line-height: 0.9;
+  }
+}
 
 .hero-eyebrow {
   font-size: 12px;
@@ -599,3 +624,4 @@ body {
     height: 2.75rem;
   }
 }
+
