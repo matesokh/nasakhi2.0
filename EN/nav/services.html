@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services – Nasakhi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;1,300;1,400&family=Work+Sans:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../nav css/services.css" />
+  
+</head>
+<body>
+
+  <header id="site-header">
+    <nav>
+      <!-- Logo -->
+      <button class="logo-btn" onclick="window.location.href='/'">
+        <img src="../images/header.png" alt="Nasakhi logo" class="logo-img" />
+        <span class="logo-name">
+          <span>NASAKHI</span>
+        </span>
+      </button>
+
+      <!-- Desktop Navigation -->
+      <div class="desktop-nav">
+        <!-- About dropdown -->
+        <div class="nav-dropdown">
+          <button class="nav-btn">
+            About
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+              <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <div class="dropdown">
+            <button onclick="window.location.href='/about'">Overview</button>
+            <button onclick="window.location.href='/partners'">Partners</button>
+            <button onclick="window.location.href='/team'">Team</button>
+          </div>
+        </div>
+
+        <!-- Projects dropdown -->
+        <div class="nav-dropdown">
+          <button class="nav-btn">
+            Projects
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+              <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <div class="dropdown">
+            <button onclick="window.location.href='/projects'">Multi-storey Buildings</button>
+            <button onclick="window.location.href='/projects'">Individual Homes</button>
+            <button onclick="window.location.href='/projects'">Commercial Buildings</button>
+            <button onclick="window.location.href='/projects'">Reconstructions</button>
+          </div>
+        </div>
+
+        <button class="nav-btn active">Services</button>
+        <button class="nav-btn" onclick="window.location.href='/contact'">Contact</button>
+        <button class="lang-btn">GE</button>
+      </div>
+
+      <!-- Hamburger (mobile) -->
+      <button class="hamburger" id="hamburger-btn" aria-label="Open menu" aria-expanded="false">
+        <span class="hamburger-lines">
+          <i id="line1"></i>
+          <i id="line2"></i>
+          <i id="line3"></i>
+        </span>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <button onclick="window.location.href='/about'">About / Overview</button>
+      <button onclick="window.location.href='/partners'">About / Partners</button>
+      <button onclick="window.location.href='/team'">About / Team</button>
+      <button onclick="window.location.href='/projects'">Projects</button>
+      <button class="active">Services</button>
+      <button onclick="window.location.href='/contact'">Contact</button>
+      <button class="lang-mobile">GE</button>
+    </div>
+  </header>
+
+
+  <!-- ══════════════════════════════════════════════════
+       MAIN
+  ══════════════════════════════════════════════════ -->
+  <main>
+
+    <!-- ── SECTION 1: HERO ──────────────────────────────── -->
+    <section class="hero">
+      <img
+        src="IMG_6734.JPG"
+        alt="Reinforcement structure at a Nasakhi construction site"
+        class="hero-bg"
+      />
+      <div class="hero-overlay-h"></div>
+      <div class="hero-overlay-v"></div>
+
+      <div class="hero-content">
+        <div style="padding-top: 24px;">
+          <h1>
+            Services<br />
+            we&nbsp;&nbsp;&nbsp;&nbsp;<em>offer</em>
+          </h1>
+        </div>
+
+        <div class="services-bar">
+          <p>Concept &amp; Drafting</p>
+          <p>Permit &amp; Tender Documentation</p>
+          <p>Construction Documentation</p>
+          <p>Author Supervision</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ── SECTION 2: DESCRIPTION ───────────────────────── -->
+    <section class="description">
+      <div style="max-width:1400px; margin-inline:auto;">
+        <p>
+          We offer range of professional services, including
+          <strong>structural design, on-site construction supervision,
+          structural project assessment expertise,</strong>
+          and more. Close collaboration with our clients ensures that every
+          structural drawing and design is precisely aligned with
+          Architectural Projects needs.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- ── SECTION 3: DELIVERY PROCESS ─────────────────── -->
+    <section class="delivery">
+      <div class="delivery-inner">
+        <h2>Our project<br />delivery process.</h2>
+
+        <div class="steps-grid">
+
+          <!-- Step 01 -->
+          <button class="step active" onmouseenter="setStep(0)" onfocus="setStep(0)" onclick="setStep(0)">
+            <img src="N2___________2-1.jpg" alt="" class="step-bg" id="step-bg-0" />
+            <div class="step-dark"></div>
+            <div class="step-body">
+              <span class="step-number">01</span>
+              <div>
+                <h3>Concept &amp; Drafting</h3>
+                <p>We start by preparing initial structural schemes tailored to your project.</p>
+              </div>
+            </div>
+          </button>
+
+          <!-- Step 02 -->
+          <button class="step" onmouseenter="setStep(1)" onfocus="setStep(1)" onclick="setStep(1)">
+            <img src="IMG_1300.JPG" alt="" class="step-bg" id="step-bg-1" />
+            <div class="step-dark"></div>
+            <div class="step-body">
+              <span class="step-number">02</span>
+              <div>
+                <h3>Permit &amp; Tender Documentation</h3>
+                <p>We develop all the necessary documents for permits and tender submission.</p>
+              </div>
+            </div>
+          </button>
+
+          <!-- Step 03 -->
+          <button class="step" onmouseenter="setStep(2)" onfocus="setStep(2)" onclick="setStep(2)">
+            <img src="viber_image_2025-07-01_14-24-16-543.jpg" alt="" class="step-bg" id="step-bg-2" />
+            <div class="step-dark"></div>
+            <div class="step-body">
+              <span class="step-number">03</span>
+              <div>
+                <h3>Construction Documentation</h3>
+                <p>We provide detailed drawings and plans for precise execution on-site.</p>
+              </div>
+            </div>
+          </button>
+
+          <!-- Step 04 -->
+          <button class="step" onmouseenter="setStep(3)" onfocus="setStep(3)" onclick="setStep(3)">
+            <img src="IMG_8073.PNG" alt="" class="step-bg" id="step-bg-3" />
+            <div class="step-dark"></div>
+            <div class="step-body">
+              <span class="step-number">04</span>
+              <div>
+                <h3>Author Supervision</h3>
+                <p>Our team supervises the construction to ensure everything matches the design.</p>
+              </div>
+            </div>
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer>
+    <div class="footer-brand">
+      <div class="footer-brand-name">NASAKHI</div>
+      <p class="footer-brand-sub">ნასახი · Architecture</p>
+    </div>
+
+    <div class="footer-contact">
+      <p>Aleksidze str.4 first floor</p>
+      <p>Tbilisi, Georgia</p>
+      <p>+995 511 222 442</p>
+      <p>office@nasakhi.com</p>
+    </div>
+
+    <div class="footer-social">
+      <a href="https://www.facebook.com/NasakhiLLC" target="_blank" rel="noreferrer">Facebook</a>
+      <a href="https://www.linkedin.com/company/nasakhi/" target="_blank" rel="noreferrer">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll → header style
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 30);
+    }, { passive: true });
+
+    // Hamburger toggle
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const mobileMenu   = document.getElementById('mobile-menu');
+    hamburgerBtn.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('open');
+      hamburgerBtn.setAttribute('aria-expanded', isOpen);
+    });
+
+    const steps = document.querySelectorAll('.step');
+    function setStep(index) {
+      steps.forEach((s, i) => s.classList.toggle('active', i === index));
+    }
+  </script>
+
+</body>
+</html>
