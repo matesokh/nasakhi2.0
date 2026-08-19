@@ -278,10 +278,12 @@ body {
   padding-top: 24px;
 }
 @media (min-width: 640px) {
-  .hero-content { padding-inline: 40px; padding-bottom: 32px; padding-top: 40px; }
+  .hero-content { padding-right: 40px; padding-left: 60px; padding-bottom: 32px; padding-top: 40px; }
 }
 @media (min-width: 1024px) {
-  .hero-content { grid-template-columns: repeat(12, 1fr); }
+  .hero-copy { grid-column: span 8; }
+  .hero-title { white-space: nowrap; }
+  .hero-title em { display: block; }
 }
 
 .hero-eyebrow {
@@ -294,7 +296,7 @@ body {
 
 .hero-title {
   font-family: 'Fraunces', serif;
-  font-size: clamp(4.75rem, 10vw, 9.5rem);
+  font-size: clamp(4.75rem, 10vw, 7.5rem);
   font-weight: 300;
   line-height: 0.74;
   letter-spacing: -0.075em;
@@ -314,8 +316,8 @@ body {
   .hero-desc { grid-column: span 4; grid-column-start: 9; padding-left: 32px; }
 }
 .hero-desc p {
-  max-width: 384px;
-  font-size: 17px;
+  width: 359px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.75;
   color: #B6B0A6;
@@ -482,7 +484,7 @@ body {
 
 .quote-text {
   font-family: 'Fraunces', serif;
-  font-size: 35px;
+  font-size: 33px;
   font-weight: 300;
   line-height: 0.98;
   letter-spacing: -1px;

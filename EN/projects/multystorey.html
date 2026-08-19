@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nasakhi — Multi-storey Buildings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,300&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../projectscss/multrystorey.css"/>
+</head>
+<body>
+
+  <!-- HEADER / NAV -->
+  <header class="site-header" id="site-header">
+    <nav class="nav-inner">
+      <a href="/" class="nav-logo">
+        <img src="logo.png" alt="Nasakhi logo" class="nav-logo-img" />
+        <span>
+          <span class="nav-brand-name">NASAKHI</span>
+          <span class="nav-brand-sub">ნასახი · Architecture</span>
+        </span>
+      </a>
+
+      <div class="nav-links">
+        <div class="nav-dropdown-wrap">
+          <button class="nav-btn" data-dropdown="about">
+            About
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </button>
+          <div class="nav-popover" id="about-popover">
+            <a href="/about">Overview</a>
+            <a href="/partners">Partners</a>
+            <a href="/team">Team</a>
+          </div>
+        </div>
+
+        <div class="nav-dropdown-wrap">
+          <button class="nav-btn nav-btn--active" data-dropdown="projects">
+            Projects
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </button>
+          <div class="nav-popover" id="projects-popover">
+            <a href="/multi-storey" class="active">Multi-storey Buildings</a>
+            <a href="/individual-homes">Individual Homes</a>
+            <a href="/commercial">Commercial Buildings</a>
+            <a href="/reconstructions">Reconstructions</a>
+          </div>
+        </div>
+
+        <a href="/services" class="nav-btn">Services</a>
+        <a href="/contact" class="nav-btn">Contact</a>
+      </div>
+
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+        <span class="hamburger-lines">
+          <i class="line"></i>
+          <i class="line"></i>
+          <i class="line"></i>
+        </span>
+      </button>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="/about" class="mobile-link">About</a>
+      <div class="mobile-dropdown">
+        <button class="mobile-link mobile-link--active mobile-dropdown-toggle" id="mobile-projects-toggle">
+          Projects
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <div class="mobile-sub" id="mobile-projects-sub">
+          <a href="/multi-storey" class="mobile-link mobile-link--sub active">Multi-storey Buildings</a>
+          <a href="/individual-homes" class="mobile-link mobile-link--sub">Individual Homes</a>
+          <a href="/commercial" class="mobile-link mobile-link--sub">Commercial Buildings</a>
+          <a href="/reconstructions" class="mobile-link mobile-link--sub">Reconstructions</a>
+        </div>
+      </div>
+      <a href="/services" class="mobile-link">Services</a>
+      <a href="/contact" class="mobile-link">Contact</a>
+    </div>
+  </header>
+
+  <!-- MAIN: PROJECT INDEX -->
+  <main class="main-wrap">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <p class="label-eyebrow">Projects / Multi-apartment residential</p>
+          <h1 class="hero-title">Every skyscraper stands as a testament to vision, resilience, and strength.</h1>
+        </div>
+        <div class="hero-right">
+          <p class="hero-desc">A selection of structural design projects for multi-apartment residences across Georgia.</p>
+          <p class="hero-meta">&nbsp;</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARCHIVE SECTION -->
+    <section class="archive-section">
+      <div class="archive-header">
+        <span>Project archive</span>
+        <span>Click a project for details</span>
+      </div>
+      <div class="projects-grid">
+
+        <!-- PROJECT CARD (repeat for each project) -->
+        <a href="/multi-storey/marneuli-1" class="project-card">
+          <figure class="card-figure">
+            <img src="images/marneuli2c.png" alt="Marneuli Residence I project view" class="card-img" />
+            <span class="card-index">01</span>
+            <span class="card-hover-label">View project ↗</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Marneuli Residence I</h2>
+            <p class="card-location">Marneuli, Georgia</p>
+          </div>
+        </a>
+
+        <a href="/multi-storey/marneuli-2" class="project-card">
+          <figure class="card-figure">
+            <img src="images/marneuliMoxveuli.png" alt="Marneuli Residence II project view" class="card-img" />
+            <span class="card-index">02</span>
+            <span class="card-hover-label">View project ↗</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Marneuli Residence II</h2>
+            <p class="card-location">Marneuli, Georgia</p>
+          </div>
+        </a>
+
+        <a href="/multi-storey/kupradze" class="project-card">
+          <figure class="card-figure">
+            <img src="images/kupradze.png" alt="Kupradze Residence project view" class="card-img" />
+            <span class="card-index">03</span>
+            <span class="card-hover-label">View project ↗</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Kupradze Residence</h2>
+            <p class="card-location">Tbilisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="/multi-storey/ortachala" class="project-card">
+          <figure class="card-figure">
+            <img src="images/ortachala.png" alt="Ortachala Residence project view" class="card-img" />
+            <span class="card-index">04</span>
+            <span class="card-hover-label">View project ↗</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Ortachala Residence</h2>
+            <p class="card-location">Tbilisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="/multi-storey/qindzmarauli" class="project-card">
+          <figure class="card-figure">
+            <img src="images/qindzmarauli.png" alt="Qindzmarauli Residence project view" class="card-img" />
+            <span class="card-index">05</span>
+            <span class="card-hover-label">View project ↗</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Qindzmarauli Residence</h2>
+            <p class="card-location">Tbilisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="/multi-storey/rustavi" class="project-card">
+          <figure class="card-figure">
+            <img src="images/rustavi.png" alt="Rustavi Residence project view" class="card-img" />
+            <span class="card-index">06</span>
+            <span class="card-hover-label">View project ↗</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Rustavi Residence</h2>
+            <p class="card-location">Rustavi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="/multi-storey/saabiacio" class="project-card">
+          <figure class="card-figure">
+            <img src="images/saabiacio.png" alt="Saabiacio Arcana project view" class="card-img" />
+            <span class="card-index">07</span>
+            <span class="card-hover-label">View project ↗</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Saabiacio Arcana</h2>
+            <p class="card-location">Tbilisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="/multi-storey/shatberashvili" class="project-card">
+          <figure class="card-figure">
+            <img src="images/shatberashvili.png" alt="Shatberashvili Residence project view" class="card-img" />
+            <span class="card-index">08</span>
+            <span class="card-hover-label">View project ↗</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Shatberashvili Residence</h2>
+            <p class="card-location">Tbilisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="/multi-storey/tchalebi" class="project-card">
+          <figure class="card-figure">
+            <img src="images/tchalebi.png" alt="Tchalebi Residence project view" class="card-img" />
+            <span class="card-index">09</span>
+            <span class="card-hover-label">View project ↗</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Tchalebi Residence</h2>
+            <p class="card-location">Tbilisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="/multi-storey/zgvisubani" class="project-card">
+          <figure class="card-figure">
+            <img src="images/zgvisubani.png" alt="Zgvisubani Residence project view" class="card-img" />
+            <span class="card-index">10</span>
+            <span class="card-hover-label">View project ↗</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Zgvisubani Residence</h2>
+            <p class="card-location">Tbilisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="/multi-storey/akhalkalaki" class="project-card">
+          <figure class="card-figure">
+            <img src="images/akhalkalaki.png" alt="Akhalkalaki Residence project view" class="card-img" />
+            <span class="card-index">11</span>
+            <span class="card-hover-label">View project ↗</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Akhalkalaki Residence</h2>
+            <p class="card-location">Akhalkalaki, Georgia</p>
+          </div>
+        </a>
+
+        <a href="/multi-storey/chalipirebi" class="project-card">
+          <figure class="card-figure">
+            <img src="images/chalipirebi.png" alt="Chalipirebi Residence project view" class="card-img" />
+            <span class="card-index">12</span>
+            <span class="card-hover-label">View project ↗</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Chalipirebi Residence</h2>
+            <p class="card-location">Tbilisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="/multi-storey/cholokashvili" class="project-card">
+          <figure class="card-figure">
+            <img src="images/cholokashvili.png" alt="Cholokashvili Residence project view" class="card-img" />
+            <span class="card-index">13</span>
+            <span class="card-hover-label">View project ↗</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Cholokashvili Residence</h2>
+            <p class="card-location">Tbilisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="/multi-storey/dadiani" class="project-card">
+          <figure class="card-figure">
+            <img src="images/dadiani.png" alt="Dadiani Residence project view" class="card-img" />
+            <span class="card-index">14</span>
+            <span class="card-hover-label">View project ↗</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Dadiani Residence</h2>
+            <p class="card-location">Tbilisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="/multi-storey/didi-dighomi-juka" class="project-card">
+          <figure class="card-figure">
+            <img src="images/didiGomiJuka.png" alt="Didi Dighomi Juka project view" class="card-img" />
+            <span class="card-index">15</span>
+            <span class="card-hover-label">View project ↗</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Didi Dighomi Juka</h2>
+            <p class="card-location">Tbilisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="/multi-storey/didi-dighomi-mirckhulava" class="project-card">
+          <figure class="card-figure">
+            <img src="images/didiGomiMirckhulava.png" alt="Didi Dighomi Mirckhulava project view" class="card-img" />
+            <span class="card-index">16</span>
+            <span class="card-hover-label">View project ↗</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Didi Dighomi Mirckhulava</h2>
+            <p class="card-location">Tbilisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="/multi-storey/didi-dighomi-newmax" class="project-card">
+          <figure class="card-figure">
+            <img src="images/didiGomiNewmax.png" alt="Didi Dighomi Newmax project view" class="card-img" />
+            <span class="card-index">17</span>
+            <span class="card-hover-label">View project ↗</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Didi Dighomi Newmax</h2>
+            <p class="card-location">Tbilisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="/multi-storey/didi-dighomi-kovz" class="project-card">
+          <figure class="card-figure">
+            <img src="images/didiGomiKovz.png" alt="Didi Dighomi Kovz project view" class="card-img" />
+            <span class="card-index">18</span>
+            <span class="card-hover-label">View project ↗</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Didi Dighomi Kovz</h2>
+            <p class="card-location">Tbilisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="/multi-storey/ethno-city" class="project-card">
+          <figure class="card-figure">
+            <img src="images/ethnocity.png" alt="Ethno City project view" class="card-img" />
+            <span class="card-index">19</span>
+            <span class="card-hover-label">View project ↗</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Ethno City</h2>
+            <p class="card-location">Tbilisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="/multi-storey/gardabani" class="project-card">
+          <figure class="card-figure">
+            <img src="images/gardabani.png" alt="Gardabani Residence project view" class="card-img" />
+            <span class="card-index">20</span>
+            <span class="card-hover-label">View project ↗</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Gardabani Residence</h2>
+            <p class="card-location">Gardabani, Georgia</p>
+          </div>
+        </a>
+
+        <a href="/multi-storey/libani" class="project-card">
+          <figure class="card-figure">
+            <img src="images/libani.png" alt="Libani Residence project view" class="card-img" />
+            <span class="card-index">21</span>
+            <span class="card-hover-label">View project ↗</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Libani Residence</h2>
+            <p class="card-location">Tbilisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="/multi-storey/likani" class="project-card">
+          <figure class="card-figure">
+            <img src="images/likani.png" alt="Likani Residence project view" class="card-img" />
+            <span class="card-index">22</span>
+            <span class="card-hover-label">View project ↗</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Likani Residence</h2>
+            <p class="card-location">Likani, Georgia</p>
+          </div>
+        </a>
+
+        <a href="/multi-storey/lortkifanidze" class="project-card">
+          <figure class="card-figure">
+            <img src="images/lortkifanidze.png" alt="Lortkifanidze Residence project view" class="card-img" />
+            <span class="card-index">23</span>
+            <span class="card-hover-label">View project ↗</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Lortkifanidze Residence</h2>
+            <p class="card-location">Tbilisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="/multi-storey/marneuli-apartments" class="project-card">
+          <figure class="card-figure">
+            <img src="images/marneuli.png" alt="Marneuli Apartments project view" class="card-img" />
+            <span class="card-index">24</span>
+            <span class="card-hover-label">View project ↗</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Marneuli Apartments</h2>
+            <p class="card-location">Marneuli, Georgia</p>
+          </div>
+        </a>
+
+        <a href="/multi-storey/maisuradze" class="project-card">
+          <figure class="card-figure">
+            <img src="images/maisuradze.png" alt="Maisuradze · Bairamashvili project view" class="card-img" />
+            <span class="card-index">25</span>
+            <span class="card-hover-label">View project ↗</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Maisuradze · Bairamashvili</h2>
+            <p class="card-location">Tbilisi, Georgia</p>
+          </div>
+        </a>
+
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Scroll header
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 24);
+    }, { passive: true });
+
+    // Hamburger
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+      hamburger.classList.toggle('open');
+    });
+
+    // Desktop dropdowns
+    document.querySelectorAll('.nav-dropdown-wrap').forEach(wrap => {
+      const popover = wrap.querySelector('.nav-popover');
+      wrap.addEventListener('mouseenter', () => popover.classList.add('open'));
+      wrap.addEventListener('mouseleave', () => popover.classList.remove('open'));
+    });
+
+    // Mobile projects sub
+    document.getElementById('mobile-projects-toggle').addEventListener('click', () => {
+      document.getElementById('mobile-projects-sub').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
