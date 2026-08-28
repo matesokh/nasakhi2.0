@@ -1,83 +1,110 @@
 <!DOCTYPE html>
 <html lang="ka">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nasakhi — Multi-storey Buildings</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,300&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../projectscss/multrystorey.css"/>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,300&family=Work+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../projectscss/multrystorey.css" />
 </head>
+
 <body>
 
-  <!-- HEADER / NAV -->
-  <header class="site-header" id="site-header">
+  <header id="site-header">
     <nav class="nav-inner">
-      <a href="/" class="nav-logo">
-        <img src="logo.png" alt="Nasakhi logo" class="nav-logo-img" />
-        <span>
-          <span class="nav-brand-name">NASAKHI</span>
-          <span class="nav-brand-sub">ნასახი · Architecture</span>
-        </span>
+      <a href="../index.html#top" class="logo">
+        <img src="../images/header.png" alt="Nasakhi logo" class="logo-img" />
+        <div class="logo-text">
+          <span class="logo-name">NASAKHI</span>
+        </div>
       </a>
 
-      <div class="nav-links">
-        <div class="nav-dropdown-wrap">
-          <button class="nav-btn" data-dropdown="about">
+      <div class="desktop-nav" id="desktop-nav">
+        <div class="nav-item">
+            <button class="nav-btn">
+              <a href="../index.html" class="nav-anchor">Home</a>
+            </button>
+          </div>
+        <div class="nav-item has-dropdown">
+          <button class="nav-btn" type="button">
             About
-            <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+              <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
           </button>
-          <div class="nav-popover" id="about-popover">
-            <a href="/about">Overview</a>
-            <a href="/partners">Partners</a>
-            <a href="/team">Team</a>
+          <div class="dropdown">
+            <a href="../about/overview.html" class="dropdown-link">Overview</a>
+            <a href="../about/partners.html" class="dropdown-link">Partners</a>
+            <a href="../about/team.html" class="dropdown-link">Team</a>
           </div>
         </div>
 
-        <div class="nav-dropdown-wrap">
-          <button class="nav-btn nav-btn--active" data-dropdown="projects">
+        <div class="nav-item has-dropdown">
+          <button class="nav-btn nav-btn--active" type="button">
             Projects
-            <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+              <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
           </button>
-          <div class="nav-popover" id="projects-popover">
-            <a href="/multi-storey" class="active">Multi-storey Buildings</a>
-            <a href="/individual-homes">Individual Homes</a>
-            <a href="/commercial">Commercial Buildings</a>
-            <a href="/reconstructions">Reconstructions</a>
+          <div class="dropdown">
+            <a href="../index.html#projects" class="dropdown-link">Individual Homes</a>
+            <a href="../index.html#projects" class="dropdown-link">Commercial Buildings</a>
+            <a href="../index.html#projects" class="dropdown-link">Reconstructions</a>
           </div>
         </div>
 
-        <a href="/services" class="nav-btn">Services</a>
-        <a href="/contact" class="nav-btn">Contact</a>
+        <div class="nav-item"><button class="nav-btn" type="button"><a href="../about/services.html"
+              class="nav-anchor">Services</a></button></div>
+        <div class="nav-item"><button class="nav-btn" type="button"><a href="../about/contact.html"
+              class="nav-anchor">Contact</a></button></div>
+        <button class="lang-btn" id="lang-btn" type="button">GE</button>
       </div>
 
-      <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
-        <span class="hamburger-lines">
-          <i class="line"></i>
-          <i class="line"></i>
-          <i class="line"></i>
-        </span>
+      <button class="hamburger" id="hamburger" type="button" aria-label="Toggle menu">
+        <svg class="icon-menu" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <line x1="4" y1="8" x2="20" y2="8" stroke="currentColor" stroke-width="1.5" />
+          <line x1="4" y1="14" x2="20" y2="14" stroke="currentColor" stroke-width="1.5" />
+          <line x1="4" y1="20" x2="20" y2="20" stroke="currentColor" stroke-width="1.5" />
+        </svg>
+        <svg class="icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display:none">
+          <path d="M6 6L18 18M6 18L18 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
       </button>
     </nav>
-
-    <!-- Mobile menu -->
-    <div class="mobile-menu" id="mobile-menu">
-      <a href="/about" class="mobile-link">About</a>
-      <div class="mobile-dropdown">
-        <button class="mobile-link mobile-link--active mobile-dropdown-toggle" id="mobile-projects-toggle">
-          Projects
-          <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+ 
+    <div class="mobile-menu" id="mobile-menu" style="display:none">
+      <a href="../index.html" class="mobile-link">Home</a>
+      <div class="mobile-nav-group">
+        <button class="mobile-toggle" type="button" aria-expanded="false"><span>About</span>
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+            <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
         </button>
-        <div class="mobile-sub" id="mobile-projects-sub">
-          <a href="/multi-storey" class="mobile-link mobile-link--sub active">Multi-storey Buildings</a>
-          <a href="/individual-homes" class="mobile-link mobile-link--sub">Individual Homes</a>
-          <a href="/commercial" class="mobile-link mobile-link--sub">Commercial Buildings</a>
-          <a href="/reconstructions" class="mobile-link mobile-link--sub">Reconstructions</a>
+        <div class="mobile-submenu">
+          <a href="../about/overview.html" class="mobile-link">Overview</a>
+          <a href="../about/partners.html" class="mobile-link">Partners</a>
+          <a href="../about/team.html" class="mobile-link">Team</a>
         </div>
       </div>
-      <a href="/services" class="mobile-link">Services</a>
-      <a href="/contact" class="mobile-link">Contact</a>
+      <div class="mobile-nav-group">
+        <button class="mobile-toggle" type="button" aria-expanded="false"><span>Projects</span>
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+            <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+        </button>
+        <div class="mobile-submenu">
+          <a href="../index.html#projects" class="mobile-link">Individual Homes</a>
+          <a href="../index.html#projects" class="mobile-link">Commercial Buildings</a>
+          <a href="../index.html#projects" class="mobile-link">Reconstructions</a>
+        </div>
+      </div>
+      <a href="../about/services.html" class="mobile-link">Services</a>
+      <a href="../about/contact.html" class="mobile-link">Contact</a>
     </div>
   </header>
 
@@ -92,8 +119,12 @@
           <h1 class="hero-title">Every skyscraper stands as a testament to vision, resilience, and strength.</h1>
         </div>
         <div class="hero-right">
-          <p class="hero-desc">A selection of structural design projects for multi-apartment residences across Georgia.</p>
-          <p class="hero-meta">&nbsp;</p>
+          <p class="hero-desc">A selection of structural design projects for multi-apartment residences across Georgia.
+          </p>
+          <span style="    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #8A8578;">Click a project for details</span>
         </div>
       </div>
     </section>
@@ -107,7 +138,7 @@
       <div class="projects-grid">
 
         <!-- PROJECT CARD (repeat for each project) -->
-        <a href="/multi-storey/marneuli-1" class="project-card">
+        <a href="../multi-storey/marneuli-1" class="project-card">
           <figure class="card-figure">
             <img src="images/marneuli2c.png" alt="Marneuli Residence I project view" class="card-img" />
             <span class="card-index">01</span>
@@ -133,7 +164,7 @@
 
         <a href="/multi-storey/kupradze" class="project-card">
           <figure class="card-figure">
-            <img src="images/kupradze.png" alt="Kupradze Residence project view" class="card-img" />
+            <img src="images/newmaxkupradze.png" alt="Kupradze Residence project view" class="card-img" />
             <span class="card-index">03</span>
             <span class="card-hover-label">View project ↗</span>
           </figure>
@@ -145,7 +176,7 @@
 
         <a href="/multi-storey/ortachala" class="project-card">
           <figure class="card-figure">
-            <img src="images/ortachala.png" alt="Ortachala Residence project view" class="card-img" />
+            <img src="images/ortachalabiji.png" alt="Ortachala Residence project view" class="card-img" />
             <span class="card-index">04</span>
             <span class="card-hover-label">View project ↗</span>
           </figure>
@@ -157,7 +188,7 @@
 
         <a href="/multi-storey/qindzmarauli" class="project-card">
           <figure class="card-figure">
-            <img src="images/qindzmarauli.png" alt="Qindzmarauli Residence project view" class="card-img" />
+            <img src="images/Qindzmaraulibiji.png" alt="Qindzmarauli Residence project view" class="card-img" />
             <span class="card-index">05</span>
             <span class="card-hover-label">View project ↗</span>
           </figure>
@@ -181,7 +212,7 @@
 
         <a href="/multi-storey/saabiacio" class="project-card">
           <figure class="card-figure">
-            <img src="images/saabiacio.png" alt="Saabiacio Arcana project view" class="card-img" />
+            <img src="images/saaviacioqarxana.png" alt="Saabiacio Arcana project view" class="card-img" />
             <span class="card-index">07</span>
             <span class="card-hover-label">View project ↗</span>
           </figure>
@@ -193,7 +224,7 @@
 
         <a href="/multi-storey/shatberashvili" class="project-card">
           <figure class="card-figure">
-            <img src="images/shatberashvili.png" alt="Shatberashvili Residence project view" class="card-img" />
+            <img src="images/Shatberashvili juka.png" alt="Shatberashvili Residence project view" class="card-img" />
             <span class="card-index">08</span>
             <span class="card-hover-label">View project ↗</span>
           </figure>
@@ -205,7 +236,7 @@
 
         <a href="/multi-storey/tchalebi" class="project-card">
           <figure class="card-figure">
-            <img src="images/tchalebi.png" alt="Tchalebi Residence project view" class="card-img" />
+            <img src="images/DigomiBidzina.png" alt="Tchalebi Residence project view" class="card-img" />
             <span class="card-index">09</span>
             <span class="card-hover-label">View project ↗</span>
           </figure>
@@ -217,7 +248,7 @@
 
         <a href="/multi-storey/zgvisubani" class="project-card">
           <figure class="card-figure">
-            <img src="images/zgvisubani.png" alt="Zgvisubani Residence project view" class="card-img" />
+            <img src="images/ZgvisubaniBiji.png" alt="Zgvisubani Residence project view" class="card-img" />
             <span class="card-index">10</span>
             <span class="card-hover-label">View project ↗</span>
           </figure>
@@ -229,7 +260,7 @@
 
         <a href="/multi-storey/akhalkalaki" class="project-card">
           <figure class="card-figure">
-            <img src="images/akhalkalaki.png" alt="Akhalkalaki Residence project view" class="card-img" />
+            <img src="images/axalqalaqinewmax.png" alt="Akhalkalaki Residence project view" class="card-img" />
             <span class="card-index">11</span>
             <span class="card-hover-label">View project ↗</span>
           </figure>
@@ -241,7 +272,7 @@
 
         <a href="/multi-storey/chalipirebi" class="project-card">
           <figure class="card-figure">
-            <img src="images/chalipirebi.png" alt="Chalipirebi Residence project view" class="card-img" />
+            <img src="images/chalipirebibiji.png" alt="Chalipirebi Residence project view" class="card-img" />
             <span class="card-index">12</span>
             <span class="card-hover-label">View project ↗</span>
           </figure>
@@ -253,7 +284,7 @@
 
         <a href="/multi-storey/cholokashvili" class="project-card">
           <figure class="card-figure">
-            <img src="images/cholokashvili.png" alt="Cholokashvili Residence project view" class="card-img" />
+            <img src="images/CholokashviliBiji.png" alt="Cholokashvili Residence project view" class="card-img" />
             <span class="card-index">13</span>
             <span class="card-hover-label">View project ↗</span>
           </figure>
@@ -265,7 +296,7 @@
 
         <a href="/multi-storey/dadiani" class="project-card">
           <figure class="card-figure">
-            <img src="images/dadiani.png" alt="Dadiani Residence project view" class="card-img" />
+            <img src="images/Dadianibiji.png" alt="Dadiani Residence project view" class="card-img" />
             <span class="card-index">14</span>
             <span class="card-hover-label">View project ↗</span>
           </figure>
@@ -277,7 +308,7 @@
 
         <a href="/multi-storey/didi-dighomi-juka" class="project-card">
           <figure class="card-figure">
-            <img src="images/didiGomiJuka.png" alt="Didi Dighomi Juka project view" class="card-img" />
+            <img src="images/dididigomijuka.png" alt="Didi Dighomi Juka project view" class="card-img" />
             <span class="card-index">15</span>
             <span class="card-hover-label">View project ↗</span>
           </figure>
@@ -289,7 +320,7 @@
 
         <a href="/multi-storey/didi-dighomi-mirckhulava" class="project-card">
           <figure class="card-figure">
-            <img src="images/didiGomiMirckhulava.png" alt="Didi Dighomi Mirckhulava project view" class="card-img" />
+            <img src="images/dididigomimircxulava.png" alt="Didi Dighomi Mirckhulava project view" class="card-img" />
             <span class="card-index">16</span>
             <span class="card-hover-label">View project ↗</span>
           </figure>
@@ -301,7 +332,7 @@
 
         <a href="/multi-storey/didi-dighomi-newmax" class="project-card">
           <figure class="card-figure">
-            <img src="images/didiGomiNewmax.png" alt="Didi Dighomi Newmax project view" class="card-img" />
+            <img src="images/dididigominewmax.png" alt="Didi Dighomi Newmax project view" class="card-img" />
             <span class="card-index">17</span>
             <span class="card-hover-label">View project ↗</span>
           </figure>
@@ -325,7 +356,7 @@
 
         <a href="/multi-storey/ethno-city" class="project-card">
           <figure class="card-figure">
-            <img src="images/ethnocity.png" alt="Ethno City project view" class="card-img" />
+            <img src="images/ethnocitybiji.png" alt="Ethno City project view" class="card-img" />
             <span class="card-index">19</span>
             <span class="card-hover-label">View project ↗</span>
           </figure>
@@ -349,7 +380,7 @@
 
         <a href="/multi-storey/libani" class="project-card">
           <figure class="card-figure">
-            <img src="images/libani.png" alt="Libani Residence project view" class="card-img" />
+            <img src="images/libanibiji.png" alt="Libani Residence project view" class="card-img" />
             <span class="card-index">21</span>
             <span class="card-hover-label">View project ↗</span>
           </figure>
@@ -361,7 +392,7 @@
 
         <a href="/multi-storey/likani" class="project-card">
           <figure class="card-figure">
-            <img src="images/likani.png" alt="Likani Residence project view" class="card-img" />
+            <img src="images/likanibiji.png" alt="Likani Residence project view" class="card-img" />
             <span class="card-index">22</span>
             <span class="card-hover-label">View project ↗</span>
           </figure>
@@ -373,7 +404,7 @@
 
         <a href="/multi-storey/lortkifanidze" class="project-card">
           <figure class="card-figure">
-            <img src="images/lortkifanidze.png" alt="Lortkifanidze Residence project view" class="card-img" />
+            <img src="images/lortkifanidzenewmax.png" alt="Lortkifanidze Residence project view" class="card-img" />
             <span class="card-index">23</span>
             <span class="card-hover-label">View project ↗</span>
           </figure>
@@ -397,7 +428,7 @@
 
         <a href="/multi-storey/maisuradze" class="project-card">
           <figure class="card-figure">
-            <img src="images/maisuradze.png" alt="Maisuradze · Bairamashvili project view" class="card-img" />
+            <img src="images/Maisuradze, Bairamashvili.png" alt="Maisuradze · Bairamashvili project view" class="card-img" />
             <span class="card-index">25</span>
             <span class="card-hover-label">View project ↗</span>
           </figure>
@@ -418,25 +449,44 @@
       header.classList.toggle('scrolled', window.scrollY > 24);
     }, { passive: true });
 
-    // Hamburger
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobile-menu');
+    const iconMenu = hamburger.querySelector('.icon-menu');
+    const iconClose = hamburger.querySelector('.icon-close');
     hamburger.addEventListener('click', () => {
-      mobileMenu.classList.toggle('open');
-      hamburger.classList.toggle('open');
+      const open = !mobileMenu.classList.contains('open');
+      mobileMenu.classList.toggle('open', open);
+      mobileMenu.style.display = open ? 'block' : 'none';
+      iconMenu.style.display = open ? 'none' : 'block';
+      iconClose.style.display = open ? 'block' : 'none';
     });
 
-    // Desktop dropdowns
-    document.querySelectorAll('.nav-dropdown-wrap').forEach(wrap => {
-      const popover = wrap.querySelector('.nav-popover');
-      wrap.addEventListener('mouseenter', () => popover.classList.add('open'));
-      wrap.addEventListener('mouseleave', () => popover.classList.remove('open'));
+    document.querySelectorAll('.mobile-toggle').forEach((toggle) => {
+      toggle.addEventListener('click', () => {
+        const group = toggle.parentElement;
+        const isOpen = group.classList.contains('open');
+        document.querySelectorAll('.mobile-nav-group').forEach((item) => {
+          const open = item === group && !isOpen;
+          item.classList.toggle('open', open);
+          item.querySelector('.mobile-toggle').setAttribute('aria-expanded', String(open));
+        });
+      });
     });
 
-    // Mobile projects sub
-    document.getElementById('mobile-projects-toggle').addEventListener('click', () => {
-      document.getElementById('mobile-projects-sub').classList.toggle('open');
+    document.querySelectorAll('.mobile-link').forEach((link) => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        mobileMenu.style.display = 'none';
+        iconMenu.style.display = 'block';
+        iconClose.style.display = 'none';
+      });
+    });
+
+    document.getElementById('lang-btn').addEventListener('click', () => {
+      const btn = document.getElementById('lang-btn');
+      btn.textContent = btn.textContent === 'GE' ? 'EN' : 'GE';
     });
   </script>
 </body>
+
 </html>
