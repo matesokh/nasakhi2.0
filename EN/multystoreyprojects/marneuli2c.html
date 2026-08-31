@@ -179,62 +179,96 @@
     <button class="lightbox-next" onclick="shiftLightbox(1)" aria-label="Next image">→</button>
   </div>
   <script>
-    const header = document.getElementById('site-header')
-    window.addEventListener('scroll', () => {
-      header.classList.toggle('scrolled', window.scrollY > 60)
-    }, { passive: true })
+  
+  const header = document.getElementById('site-header')
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 60)
+  }, { passive: true })
 
-    const hamburger = document.getElementById('hamburger')
-    const mobileMenu = document.getElementById('mobile-menu')
-    const iconMenu = hamburger.querySelector('.icon-menu')
-    const iconClose = hamburger.querySelector('.icon-close')
+  const hamburger = document.getElementById('hamburger')
+  const mobileMenu = document.getElementById('mobile-menu')
+  const iconMenu = hamburger.querySelector('.icon-menu')
+  const iconClose = hamburger.querySelector('.icon-close')
 
-    hamburger.addEventListener('click', () => {
-      const open = !mobileMenu.classList.contains('open')
-      mobileMenu.classList.toggle('open', open)
-      mobileMenu.style.display = open ? 'block' : 'none'
-      iconMenu.style.display = open ? 'none' : 'block'
-      iconClose.style.display = open ? 'block' : 'none'
-    })
+  hamburger.addEventListener('click', () => {
+    const open = !mobileMenu.classList.contains('open')
+    mobileMenu.classList.toggle('open', open)
+    mobileMenu.style.display = open ? 'block' : 'none'
+    iconMenu.style.display = open ? 'none' : 'block'
+    iconClose.style.display = open ? 'block' : 'none'
+  })
 
-    document.querySelectorAll('.mobile-toggle').forEach((toggle) => {
-      toggle.addEventListener('click', () => {
-        const group = toggle.parentElement
-        const isOpen = group.classList.contains('open')
+  document.querySelectorAll('.mobile-toggle').forEach((toggle) => {
+    toggle.addEventListener('click', () => {
+      const group = toggle.parentElement
+      const isOpen = group.classList.contains('open')
 
-        document.querySelectorAll('.mobile-nav-group').forEach((item) => {
-          const isCurrent = item === group
-          item.classList.toggle('open', isCurrent && !isOpen)
-          const btn = item.querySelector('.mobile-toggle')
-          if (btn) btn.setAttribute('aria-expanded', String(isCurrent && !isOpen))
-        })
+      document.querySelectorAll('.mobile-nav-group').forEach((item) => {
+        const isCurrent = item === group
+        item.classList.toggle('open', isCurrent && !isOpen)
+        const btn = item.querySelector('.mobile-toggle')
+        if (btn) btn.setAttribute('aria-expanded', String(isCurrent && !isOpen))
       })
     })
+  })
 
-    document.querySelectorAll('.mobile-link').forEach((link) => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.remove('open')
-        mobileMenu.style.display = 'none'
-        iconMenu.style.display = 'block'
-        iconClose.style.display = 'none'
-      })
+  document.querySelectorAll('.mobile-link').forEach((link) => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('open')
+      mobileMenu.style.display = 'none'
+      iconMenu.style.display = 'block'
+      iconClose.style.display = 'none'
     })
+  })
 
-    document.querySelectorAll('.has-dropdown').forEach((item) => {
-      const dropdown = item.querySelector('.dropdown')
-      item.addEventListener('mouseenter', () => {
-        dropdown.style.display = 'block'
-      })
-      item.addEventListener('mouseleave', () => {
-        dropdown.style.display = 'none'
-      })
+  document.querySelectorAll('.has-dropdown').forEach((item) => {
+    const dropdown = item.querySelector('.dropdown')
+    item.addEventListener('mouseenter', () => {
+      dropdown.style.display = 'block'
     })
+    item.addEventListener('mouseleave', () => {
+      dropdown.style.display = 'none'
+    })
+  })
 
-    document.getElementById('lang-btn').addEventListener('click', () => {
-      const btn = document.getElementById('lang-btn')
-      btn.textContent = btn.textContent === 'GE' ? 'EN' : 'GE'
-    })
-  </script>
+  document.getElementById('lang-btn').addEventListener('click', () => {
+    const btn = document.getElementById('lang-btn')
+    btn.textContent = btn.textContent === 'GE' ? 'EN' : 'GE'
+  })
+
+  // --- Lightbox ---
+  const galleryImages = Array.from(document.querySelectorAll('.gallery-img')).map(img => img.src)
+
+  let currentLightboxIndex = 0
+  const lightbox = document.getElementById('lightbox')
+  const lightboxImg = document.getElementById('lightbox-img')
+
+  function openLightbox(index) {
+    currentLightboxIndex = index
+    lightboxImg.src = galleryImages[currentLightboxIndex]
+    lightbox.classList.add('open')
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('open')
+  }
+
+  function shiftLightbox(direction) {
+    currentLightboxIndex = (currentLightboxIndex + direction + galleryImages.length) % galleryImages.length
+    lightboxImg.src = galleryImages[currentLightboxIndex]
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('open')) return
+    if (e.key === 'Escape') closeLightbox()
+    if (e.key === 'ArrowLeft') shiftLightbox(-1)
+    if (e.key === 'ArrowRight') shiftLightbox(1)
+  })
+
+ lightbox.addEventListener('click', (e) => {
+  if (e.target === lightbox) closeLightbox()
+})
+</script>
 </body>
 </html>
 
