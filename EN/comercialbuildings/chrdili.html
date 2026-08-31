@@ -1,0 +1,295 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kharagauli</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600&family=Work+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="project-detail.css" />
+</head>
+
+<body>
+  <header id="site-header">
+    <nav class="nav-inner">
+      <a href="../index.html" class="logo">
+        <img src="../images/header.png" alt="Nasakhi logo" class="logo-img" />
+        <div class="logo-text">
+          <span class="logo-name">NASAKHI</span>
+        </div>
+      </a>
+
+      <div class="desktop-nav" id="desktop-nav">
+        <div class="nav-item has-dropdown" data-dropdown="about">
+          <button class="nav-btn">
+            About
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+              <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+          </button>
+          <div class="dropdown" id="dropdown-about">
+            <a href="../about/overview.html" class="dropdown-link">Overview</a>
+            <a href="../about/partners.html" class="dropdown-link">Partners</a>
+            <a href="../about/team.html" class="dropdown-link">Team</a>
+          </div>
+        </div>
+
+        <div class="nav-item has-dropdown" data-dropdown="projects">
+          <button class="nav-btn">
+            Projects
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+              <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+          </button>
+          <div class="dropdown" id="dropdown-projects">
+            <a href="../projects/multystorey.html" class="dropdown-link">Multi-storey Buildings</a>
+            <a href="../projects/individual.html" class="dropdown-link">Individual Homes</a>
+            <a href="../projects/comercial.html" class="dropdown-link">Commercial Buildings</a>
+            <a href="../projects/reconstruction.html" class="dropdown-link">Reconstructions</a>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <button class="nav-btn">
+            <a href="../about/services.html" class="nav-anchor">Services</a>
+          </button>
+        </div>
+
+        <div class="nav-item">
+          <button class="nav-btn">
+            <a href="../about/contact.html" class="nav-anchor">Contact</a>
+          </button>
+        </div>
+
+        <button class="lang-btn" id="lang-btn">GE</button>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <svg class="icon-menu" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <line x1="4" y1="8" x2="20" y2="8" stroke="currentColor" stroke-width="1.5" />
+          <line x1="4" y1="14" x2="20" y2="14" stroke="currentColor" stroke-width="1.5" />
+          <line x1="4" y1="20" x2="20" y2="20" stroke="currentColor" stroke-width="1.5" />
+        </svg>
+        <svg class="icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display:none">
+          <path d="M6 6L18 18M6 18L18 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+      </button>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu" style="display:none">
+      <div class="mobile-nav-group">
+        <button class="mobile-toggle" type="button" aria-expanded="false">
+          <span>About</span>
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+            <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+        </button>
+        <div class="mobile-submenu">
+          <a href="../about/overview.html" class="mobile-link">Overview</a>
+          <a href="../about/partners.html" class="mobile-link">Partners</a>
+          <a href="../about/team.html" class="mobile-link">Team</a>
+        </div>
+      </div>
+
+      <div class="mobile-nav-group">
+        <button class="mobile-toggle" type="button" aria-expanded="false">
+          <span>Projects</span>
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+            <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+        </button>
+        <div class="mobile-submenu">
+          <a href="../projects/multystorey.html" class="mobile-link">Multi-storey Buildings</a>
+          <a href="../projects/individual.html" class="mobile-link">Individual Homes</a>
+          <a href="../projects/comercial.html" class="mobile-link">Commercial Buildings</a>
+          <a href="../projects/reconstruction.html" class="mobile-link">Reconstructions</a>
+        </div>
+      </div>
+
+      <a href="../about/services.html" class="mobile-link">Services</a>
+      <a href="../about/contact.html" class="mobile-link">Contact</a>
+    </div>
+  </header>
+
+<main class="main-wrap">
+    <section class="detail-hero">
+      <img src="images/chrdili1.jpg" alt="School" class="detail-hero-bg" />
+      <div class="detail-hero-overlay"></div>
+      <div class="detail-hero-inner">
+        <a href="../projects/comercial.html" class="detail-back" aria-label="Back to commercial building projects"></a>
+        <div class="detail-hero-text">
+          <h1 class="detail-title">School</h1>
+          <p class="detail-subtitle">Kharagauli, Chrdili</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-body">
+      <aside class="detail-profile">
+        <p class="profile-label">Project profile</p>
+        <dl class="profile-list">
+          <div class="profile-row">
+            <dt>Location</dt>
+            <dd>Kharagauli, Chrdili</dd>
+          </div>
+          <div class="profile-row">
+            <dt>Category</dt>
+            <dd>School</dd>
+          </div>
+          <div class="profile-row">
+            <dt>Architecture</dt>
+            <dd>Java</dd>
+          </div>
+          <div class="profile-row">
+            <dt>Status</dt>
+            <dd>Ongoing</dd>
+          </div>
+        </dl>
+      </aside>
+
+      <div class="detail-gallery">
+        <div class="gallery-grid">
+          <button class="gallery-item gallery-item--wide" onclick="openLightbox(0)" aria-label="Expand image 1">
+            <img src="images/chrdili1.jpg" alt="School project view 1" class="gallery-img" />
+            <span class="gallery-overlay"></span>
+            <span class="gallery-expand">Expand</span>
+          </button>
+
+          <button class="gallery-item" onclick="openLightbox(1)" aria-label="Expand image 2">
+            <img src="images/chrdili2.jpg" alt="School project view 2" class="gallery-img" />
+            <span class="gallery-overlay"></span>
+            <span class="gallery-expand">Expand</span>
+          </button>
+
+          <button class="gallery-item" onclick="openLightbox(2)" aria-label="Expand image 3">
+            <img src="images/chrdili3.jpg" alt="School project view 3" class="gallery-img" />
+            <span class="gallery-overlay"></span>
+            <span class="gallery-expand">Expand</span>
+          </button>
+
+          <button class="gallery-item" onclick="openLightbox(3)" aria-label="Expand image 4">
+            <img src="images/chrdili4.png" alt="School project view 4" class="gallery-img" />
+            <span class="gallery-overlay"></span>
+            <span class="gallery-expand">Expand</span>
+          </button>
+
+          <button class="gallery-item" onclick="openLightbox(4)" aria-label="Expand image 5">
+            <img src="images/chrdili5.png" alt="School project view 5" class="gallery-img" />
+            <span class="gallery-overlay"></span>
+            <span class="gallery-expand">Expand</span>
+          </button>
+
+          <button class="gallery-item" onclick="openLightbox(5)" aria-label="Expand image 6">
+            <img src="images/chrdili6.png" alt="School project view 6" class="gallery-img" />
+            <span class="gallery-overlay"></span>
+            <span class="gallery-expand">Expand</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Expanded project image">
+    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close expanded image">Close</button>
+    <button class="lightbox-prev" onclick="shiftLightbox(-1)" aria-label="Previous image">←</button>
+    <img src="" alt="" class="lightbox-img" id="lightbox-img" onclick="event.stopPropagation()" />
+    <button class="lightbox-next" onclick="shiftLightbox(1)" aria-label="Next image">→</button>
+  </div>
+  <script>
+  
+  const header = document.getElementById('site-header')
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 60)
+  }, { passive: true })
+
+  const hamburger = document.getElementById('hamburger')
+  const mobileMenu = document.getElementById('mobile-menu')
+  const iconMenu = hamburger.querySelector('.icon-menu')
+  const iconClose = hamburger.querySelector('.icon-close')
+
+  hamburger.addEventListener('click', () => {
+    const open = !mobileMenu.classList.contains('open')
+    mobileMenu.classList.toggle('open', open)
+    mobileMenu.style.display = open ? 'block' : 'none'
+    iconMenu.style.display = open ? 'none' : 'block'
+    iconClose.style.display = open ? 'block' : 'none'
+  })
+
+  document.querySelectorAll('.mobile-toggle').forEach((toggle) => {
+    toggle.addEventListener('click', () => {
+      const group = toggle.parentElement
+      const isOpen = group.classList.contains('open')
+
+      document.querySelectorAll('.mobile-nav-group').forEach((item) => {
+        const isCurrent = item === group
+        item.classList.toggle('open', isCurrent && !isOpen)
+        const btn = item.querySelector('.mobile-toggle')
+        if (btn) btn.setAttribute('aria-expanded', String(isCurrent && !isOpen))
+      })
+    })
+  })
+
+  document.querySelectorAll('.mobile-link').forEach((link) => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('open')
+      mobileMenu.style.display = 'none'
+      iconMenu.style.display = 'block'
+      iconClose.style.display = 'none'
+    })
+  })
+
+  document.querySelectorAll('.has-dropdown').forEach((item) => {
+    const dropdown = item.querySelector('.dropdown')
+    item.addEventListener('mouseenter', () => {
+      dropdown.style.display = 'block'
+    })
+    item.addEventListener('mouseleave', () => {
+      dropdown.style.display = 'none'
+    })
+  })
+
+  document.getElementById('lang-btn').addEventListener('click', () => {
+    const btn = document.getElementById('lang-btn')
+    btn.textContent = btn.textContent === 'GE' ? 'EN' : 'GE'
+  })
+
+  // --- Lightbox ---
+  const galleryImages = Array.from(document.querySelectorAll('.gallery-img')).map(img => img.src)
+
+  let currentLightboxIndex = 0
+  const lightbox = document.getElementById('lightbox')
+  const lightboxImg = document.getElementById('lightbox-img')
+
+  function openLightbox(index) {
+    currentLightboxIndex = index
+    lightboxImg.src = galleryImages[currentLightboxIndex]
+    lightbox.classList.add('open')
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('open')
+  }
+
+  function shiftLightbox(direction) {
+    currentLightboxIndex = (currentLightboxIndex + direction + galleryImages.length) % galleryImages.length
+    lightboxImg.src = galleryImages[currentLightboxIndex]
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('open')) return
+    if (e.key === 'Escape') closeLightbox()
+    if (e.key === 'ArrowLeft') shiftLightbox(-1)
+    if (e.key === 'ArrowRight') shiftLightbox(1)
+  })
+
+ lightbox.addEventListener('click', (e) => {
+  if (e.target === lightbox) closeLightbox()
+})
+</script>
+</body>
+
+</html>
