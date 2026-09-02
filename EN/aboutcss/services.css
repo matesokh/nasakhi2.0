@@ -378,13 +378,16 @@
       transition: opacity 0.7s;
     }
     .step.active .step-bg { opacity: 0.25; }
-    .step:hover .step-bg  { opacity: 0.15; }
+    .step:hover .step-bg  { opacity: 0.50; }
 
     .step-dark {
       position: absolute;
       inset: 0;
       background: rgba(13,13,11,.45);
+      transition: background 0.35s;
     }
+    .step:hover .step-dark,
+    .step.active .step-dark { background: rgba(13,13,11,.2); }
 
     .step-body {
       position: relative;
@@ -462,7 +465,7 @@
 
 
 .footer-logo {
-  height: 4.5rem;
+  height: 5.0rem;
   width: auto;
   object-fit: contain;
   margin-bottom: 1.5rem;
