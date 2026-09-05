@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact – Nasakhi</title>
+  <title>Contact</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;1,300;1,400&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -64,7 +64,7 @@
         </div>
 
 
-        <button class="lang-btn" id="lang-btn">GE</button>
+        <button class="lang-btn" id="lang-btn" type="button">GE</button>
       </div>
 
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
@@ -185,8 +185,8 @@
         <div class="office-hours">
           <p class="office-hours-label">Office hours</p>
           <p class="office-hours-times">
-            Monday–Friday · 10:00–19:00<br />
-            Saturday · 12:00–18:00
+            Monday-Friday 10:00–19:00<br />
+            Saturday 12:00–18:00
           </p>
         </div>
       </div>
@@ -200,7 +200,7 @@
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
         <div class="map-caption">
-          <p class="map-coords">41°43′10.7″N · 44°43′26.0″E</p>
+          <p class="map-coords">41°44'21.7"N 44°43'33.1"E</p>
           <p class="map-title">Find us in Tbilisi</p>
         </div>
       </div>
@@ -208,7 +208,7 @@
     </div>
 
 
-    <!-- ── SECTION 3: QUOTE + PHOTOS ────────────────── -->
+    
     <section class="quote-section">
       <div class="quote-inner">
 
@@ -217,7 +217,7 @@
           <p class="quote-text">
             <em>"A good&nbsp;&nbsp;engineer thinks in reverse and asks himself about the
             <strong>stylistic consequences of the components and</strong>
-            systems he proposes." – Helmut Jahn</em>
+            systems he proposes".Helmut Jahn</em>
           </p>
         </div>
 
@@ -249,9 +249,9 @@
   </main>
 
 
-  <!-- ═══════════════════════════════════════════════
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
        FOOTER
-  ═══════════════════════════════════════════════ -->
+  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
    <footer class="footer">
   <div class="footer-rule"></div>
 
@@ -265,7 +265,7 @@
           class="footer-logo"
         />
         <p class="footer-brand-text">
-          Complete structural services — from structural design to author supervision. Tbilisi, Georgia.
+          Complete structural services from structural design to author supervision. Tbilisi, Georgia.
         </p>
       </div>
 
@@ -289,7 +289,7 @@
 
       <div class="footer-col">
         <h4 class="footer-heading">Working Hours</h4>
-        <p class="footer-text">Mon–Fri: 10:00–19:00</p>
+        <p class="footer-text">Monday-Friday: 10:00–19:00</p>
         <p class="footer-text">Saturday: 12:00–18:00</p>
         <p class="footer-text">Sunday: Closed</p>
 
@@ -303,11 +303,11 @@
 </footer>
 
 
-  <!-- ═══════════════════════════════════════════════
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
        JAVASCRIPT
-  ═══════════════════════════════════════════════ -->
+  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
   <script>
-    // Scroll — header background
+    // Scroll â€” header background
     const header = document.getElementById('site-header');
     window.addEventListener('scroll', () => {
       header.classList.toggle('scrolled', window.scrollY > 40);
@@ -368,5 +368,7 @@
     });
   </script>
 
+<script data-language-link="ge">document.getElementById('lang-btn').addEventListener('click', () => { window.location.href = window.location.href.replace('/EN/', '/GE/') })</script>
 </body>
 </html>
+

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -71,7 +71,7 @@
           </button>
         </div>
 
-        <button class="lang-btn" id="lang-btn">GE</button>
+        <button class="lang-btn" id="lang-btn" type="button">GE</button>
       </div>
 
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
@@ -201,9 +201,9 @@
 
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Expanded project image">
     <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close expanded image">Close</button>
-    <button class="lightbox-prev" onclick="shiftLightbox(-1)" aria-label="Previous image">←</button>
+    <button class="lightbox-prev" onclick="shiftLightbox(-1)" aria-label="Previous image">â†</button>
     <img src="" alt="" class="lightbox-img" id="lightbox-img" onclick="event.stopPropagation()" />
-    <button class="lightbox-next" onclick="shiftLightbox(1)" aria-label="Next image">→</button>
+    <button class="lightbox-next" onclick="shiftLightbox(1)" aria-label="Next image">â†’</button>
   </div>
   <script>
   
@@ -296,6 +296,8 @@
   if (e.target === lightbox) closeLightbox()
 })
 </script>
+<script data-language-link="ge">document.getElementById('lang-btn').addEventListener('click', () => { window.location.href = window.location.href.replace('/EN/', '/GE/') })</script>
 </body>
 
 </html>
+

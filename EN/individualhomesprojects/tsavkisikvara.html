@@ -71,7 +71,7 @@
           </button>
         </div>
 
-        <button class="lang-btn" id="lang-btn">GE</button>
+        <button class="lang-btn" id="lang-btn" type="button">GE</button>
       </div>
 
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
@@ -298,6 +298,8 @@
   if (e.target === lightbox) closeLightbox()
 })
 </script>
+<script data-language-link="ge">document.getElementById('lang-btn').addEventListener('click', () => { window.location.href = window.location.href.replace('/EN/', '/GE/') })</script>
 </body>
 
 </html>
+

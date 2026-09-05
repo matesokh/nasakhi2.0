@@ -1,0 +1,509 @@
+﻿<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>პარტნიორები â€“ Nasakhi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;1,300;1,400&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../aboutcss/partners.css"/>
+  <link rel="icon" href="../Images/axali logo.png">
+</head>
+<body>
+
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+       HEADER
+  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+  <header id="site-header">
+    <nav class="nav-inner">
+      <a href="../index.html" class="logo">
+        <img src="../images/header.png" alt="Nasakhi logo" class="logo-img" />
+        <div class="logo-text">
+          <span class="logo-name">NASAKHI</span>
+        </div>
+      </a>
+
+      <div class="desktop-nav" id="desktop-nav">
+        <div class="nav-item">
+          <button class="nav-btn">
+            <a href="../index.html" class="nav-anchor">მთავარი</a>
+          </button>
+        </div>
+
+        <div class="nav-item has-dropdown" data-dropdown="about">
+          <button class="nav-btn">
+            ჩვენ შესახებ
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+              <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+          </button>
+          <div class="dropdown" id="dropdown-about">
+            <a href="overview.html" class="dropdown-link">ჩვენ შესახებ</a>
+            <a href="team.html" class="dropdown-link">გუნდი</a>
+          </div>
+        </div>
+
+        <div class="nav-item has-dropdown" data-dropdown="projects">
+          <button class="nav-btn">
+            პროექტები
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+              <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+          </button>
+          <div class="dropdown" id="dropdown-projects">
+            <a href="../projects/multystorey.html" class="dropdown-link">მრავალბინიანი შენობები</a>
+            <a href="../projects/individual.html" class="dropdown-link">ინდივიდუალური სახლები</a>
+            <a href="../projects/comercial.html" class="dropdown-link">კომერციული შენობები</a>
+            <a href="../projects/reconstruction.html" class="dropdown-link">რეკონსტრუქციები</a>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <button class="nav-btn">
+            <a href="services.html" class="nav-anchor">სერვისები</a>
+          </button>
+        </div>
+
+        <div class="nav-item">
+          <button class="nav-btn">
+            <a href="contact.html" class="nav-anchor">კონტაქტი</a>
+          </button>
+        </div>
+
+        <button class="lang-btn" id="lang-btn" type="button">EN</button>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <svg class="icon-menu" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <line x1="4" y1="8" x2="20" y2="8" stroke="currentColor" stroke-width="1.5" />
+          <line x1="4" y1="14" x2="20" y2="14" stroke="currentColor" stroke-width="1.5" />
+          <line x1="4" y1="20" x2="20" y2="20" stroke="currentColor" stroke-width="1.5" />
+        </svg>
+        <svg class="icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display:none">
+          <path d="M6 6L18 18M6 18L18 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+      </button>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu" style="display:none">
+      <a href="../index.html" class="mobile-link">მთავარი</a>
+
+      <div class="mobile-nav-group">
+        <button class="mobile-toggle" type="button" aria-expanded="false">
+          <span>ჩვენ შესახებ</span>
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+            <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+        </button>
+        <div class="mobile-submenu">
+          <a href="overview.html" class="mobile-link">ჩვენ შესახებ</a>
+          <a href="team.html" class="mobile-link">გუნდი</a>
+          <a href="partners.html" class="mobile-link">პარტნიორები</a>
+        </div>
+      </div>
+
+      <div class="mobile-nav-group">
+        <button class="mobile-toggle" type="button" aria-expanded="false">
+          <span>პროექტები</span>
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+            <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+        </button>
+        <div class="mobile-submenu">
+          <a href="../projects/multystorey.html" class="mobile-link">მრავალბინიანი შენობები</a>
+          <a href="../projects/individual.html" class="mobile-link">ინდივიდუალური სახლები</a>
+          <a href="../projects/comercial.html" class="mobile-link">კომერციული შენობები</a>
+          <a href="../projects/reconstruction.html" class="mobile-link">რეკონსტრუქციები</a>
+        </div>
+      </div>
+
+      <a href="services.html" class="mobile-link">სერვისები</a>
+      <a href="contact.html" class="mobile-link">კონტაქტი</a>
+    </div>
+  </header>
+
+
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+       MAIN
+  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+  <main>
+
+    <!-- â”€â”€ SECTION 1: HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <section class="hero">
+      <div class="hero-rule" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="hero-eyebrow">Clients</p>
+          <h1 class="hero-title">
+            Companies<br />
+            that <em>Use</em> Our სერვისები
+          </h1>
+        </div>
+
+        <p class="hero-desc">
+          Our Portfolio includes over 1,000 Completed პროექტები.
+          We Work Both With Companies and Individual Clients
+        </p>
+      </div>
+    </section>
+
+
+    <!-- â”€â”€ SECTION 2: LABEL BAR â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <section class="label-bar">
+      <div class="label-bar-inner">
+        <span>Selected collaborators</span>
+        <span></span>
+      </div>
+    </section>
+
+
+    <!-- â”€â”€ SECTION 3: LOGO GRID â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <section class="logo-section">
+      <div class="logo-grid">
+
+        <!-- 01 Amani Group -->
+        <article class="logo-tile">
+          <span class="logo-index">01</span>
+          <img src="../partnersimage/monolith.jpg" alt="Amani Group logo" />
+          <div class="logo-underline"></div>
+        </article>
+
+        <!-- 02 Ecodicomi -->
+        <article class="logo-tile">
+          <span class="logo-index">02</span>
+          <img src="../partnersimage/ecodigomi.jpg" alt="Ecodicomi logo" />
+          <div class="logo-underline"></div>
+        </article>
+
+        <!-- 03 Tbilisi House -->
+        <article class="logo-tile">
+          <span class="logo-index">03</span>
+          <img src="../partnersimage/igoa.JPG" alt="Tbilisi House logo" />
+          <div class="logo-underline"></div>
+        </article>
+
+        <!-- 04 Grada Development -->
+        <article class="logo-tile">
+          <span class="logo-index">04</span>
+          <img src="../partnersimage/grada.JPG" alt="Grada Development logo" />
+          <div class="logo-underline"></div>
+        </article>
+
+        <!-- 05 Studio 2 -->
+        <article class="logo-tile">
+          <span class="logo-index">05</span>
+          <img src="../partnersimage/B.JPG" alt="Studio 2 logo" />
+          <div class="logo-underline"></div>
+        </article>
+
+        <!-- 06 Shinwood -->
+        <article class="logo-tile">
+          <span class="logo-index">06</span>
+          <img src="../partnersimage/shinwood.jpg" alt="Shinwood logo" />
+          <div class="logo-underline"></div>
+        </article>
+
+        <!-- 07 MONS -->
+        <article class="logo-tile">
+          <span class="logo-index">07</span>
+          <img src="../partnersimage/SAPHARELI.jpg" alt="MONS logo" />
+          <div class="logo-underline"></div>
+        </article>
+
+        <!-- 08 Laboratory of Architecture -->
+        <article class="logo-tile">
+          <span class="logo-index">08</span>
+          <img src="../partnersimage/Laboratory of Architecture.jpg" alt="Laboratory of Architecture logo" />
+          <div class="logo-underline"></div>
+        </article>
+
+        <!-- 09 Saphareli -->
+        <article class="logo-tile">
+          <span class="logo-index">09</span>
+          <img src="../partnersimage/NN.png" />
+          <div class="logo-underline"></div>
+        </article>
+
+        <!-- 10 IGOA Architects -->
+        <article class="logo-tile">
+          <span class="logo-index">10</span>
+          <img src="../partnersimage/tbilisihouse.jfif" alt="IGOA Architects logo" />
+          <div class="logo-underline"></div>
+        </article>
+
+        <!-- 11 MegaWatt -->
+        <article class="logo-tile">
+          <span class="logo-index">11</span>
+          <img src="../partnersimage/maza.jpg" alt="MegaWatt logo" />
+          <div class="logo-underline"></div>
+        </article>
+
+        <!-- 12 BNL -->
+        <article class="logo-tile">
+          <span class="logo-index">12</span>
+          <img src="../partnersimage/12.jpg" alt="BNL logo" />
+          <div class="logo-underline"></div>
+        </article>
+
+        <!-- 13 LAA -->
+        <article class="logo-tile">
+          <span class="logo-index">13</span>
+          <img src="../partnersimage/MegaWatt.jpg" alt="LAA logo" />
+          <div class="logo-underline"></div>
+        </article>
+
+        <!-- 14 Tsutskiridze + Architects -->
+        <article class="logo-tile">
+          <span class="logo-index">14</span>
+          <img src="../partnersimage/aversi.PNG" alt="Tsutskiridze + Architects logo" />
+          <div class="logo-underline"></div>
+        </article>
+
+        <!-- 15 Opizers -->
+        <article class="logo-tile">
+          <span class="logo-index">15</span>
+          <img src="../partnersimage/opizers.jpg" alt="Opizers logo" />
+          <div class="logo-underline"></div>
+        </article>
+
+        <!-- 16 DA -->
+        <article class="logo-tile">
+          <span class="logo-index">16</span>
+          <img src="../partnersimage/dadiani.png" alt="DA logo" />
+          <div class="logo-underline"></div>
+        </article>
+
+        <!-- 17 Likani Hills -->
+        <article class="logo-tile">
+          <span class="logo-index">17</span>
+          <img src="../partnersimage/likanihills.jpg" alt="Likani Hills logo" />
+          <div class="logo-underline"></div>
+        </article>
+
+        <!-- 18 ANKO -->
+        <article class="logo-tile">
+          <span class="logo-index">18</span>
+          <img src="../partnersimage/newmax.jpg" alt="ANKO logo" />
+          <div class="logo-underline"></div>
+        </article>
+
+        <!-- 19 Aversi -->
+        <article class="logo-tile">
+          <span class="logo-index">19</span>
+          <img src="../partnersimage/tsutskiridze.jpg" alt="Aversi logo" />
+          <div class="logo-underline"></div>
+        </article>
+
+        <!-- 20 Ligem Architecture -->
+        <article class="logo-tile">
+          <span class="logo-index">20</span>
+          <img src="../partnersimage/ligem.png" alt="Ligem Architecture logo" />
+          <div class="logo-underline"></div>
+        </article>
+
+        <!-- 21 Indeco -->
+        <article class="logo-tile">
+          <span class="logo-index">21</span>
+          <img src="../partnersimage/indeco.jpg" alt="Indeco logo" />
+          <div class="logo-underline"></div>
+        </article>
+
+        <!-- 22 N -->
+        <article class="logo-tile">
+          <span class="logo-index">22</span>
+          <img src="../partnersimage/Midamo.png" alt="N logo" />
+          <div class="logo-underline"></div>
+        </article>
+
+        <!-- 23 Solo Group -->
+        <article class="logo-tile">
+          <span class="logo-index">23</span>
+          <img src="../partnersimage/anko.jpg" alt="Solo Group logo" />
+          <div class="logo-underline"></div>
+        </article>
+
+        <!-- 24 W2KShop -->
+        <article class="logo-tile">
+          <span class="logo-index">24</span>
+          <img src="../partnersimage/W2kshop.png" alt="W2KShop logo" />
+          <div class="logo-underline"></div>
+        </article>
+
+        <!-- 25 LTD Karkasi -->
+        <article class="logo-tile">
+          <span class="logo-index">25</span>
+          <img src="../partnersimage/ltdkarkasi.jpeg" alt="LTD Karkasi logo" />
+          <div class="logo-underline"></div>
+        </article>
+
+        <!-- 26 Megapolis -->
+        <article class="logo-tile">
+          <span class="logo-index">26</span>
+          <img src="../partnersimage/megapolisi.PNG" alt="Megapolis logo" />
+          <div class="logo-underline"></div>
+        </article>
+
+        <!-- 27 New Max Architectural Bureau -->
+        <article class="logo-tile">
+          <span class="logo-index">27</span>
+          <img src="../partnersimage/mons.jpg" alt="New Max Architectural Bureau logo" />
+          <div class="logo-underline"></div>
+        </article>
+
+        <!-- 28 And more -->
+        <article class="logo-tile">
+          <span class="logo-index">28</span>
+          <img src="../partnersimage/java.png" alt="And more" />
+          <div class="logo-underline"></div>
+        </article>
+
+        <!-- 29 And more (centered, full-width) -->
+        <article class="logo-tile centered">
+          <img src="../partnersimage/andmore.png" alt="And more" />
+          <div class="logo-underline"></div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- â”€â”€ SECTION 4: CTA BAND â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <section class="cta-band">
+      <div class="cta-inner">
+        <p class="cta-label">Continuing collaboration</p>
+        <p class="cta-text">
+          We extend our sincere gratitude to all our partners and clients who
+          consistently recommend us. As our community expands day by day, we are
+          deeply grateful and proud to share this journey with you.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+       FOOTER
+  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+  <footer class="footer">
+  <div class="footer-rule"></div>
+
+  <div class="footer-inner">
+    <div class="footer-grid">
+  
+      <div class="footer-col footer-brand">
+        <img
+          src="https://media.base44.com/images/public/6a5c90ac8ccd38069bd9f92d/cec4d00aa_250724_P_1.png"
+          alt="NASAKHI logo"
+          class="footer-logo"
+        />
+        <p class="footer-brand-text">
+          სრული კონსტრუქციული მომსახურება â€” კონსტრუქციული პროექტირებიდან საავტორო ზედამხედველობამდე. Tbilisi, Georgia.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">კონტაქტი</h4>
+        <a href="tel:+995511222442" class="footer-link">+995 511 222 442</a>
+        <a href="mailto:office@nasakhi.com" class="footer-link">office@nasakhi.com</a>
+        <p class="footer-text">
+          28 Kvemo Azhara St,<br />
+          Tbilisi 0186 
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">ნავიგაცია</h4>
+        <a href="overview.html" class="footer-link">ჩვენ შესახებ</a>
+        <a href="services.html" class="footer-link">სერვისები</a>
+        <a href="../index.html#projects" class="footer-link">პროექტები</a>
+        <a href="contact.html" class="footer-link">კონტაქტი</a>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">სამუშაო საათები</h4>
+        <p class="footer-text">Monâ€“Fri: 10:00â€“19:00</p>
+        <p class="footer-text">შაბათი: 12:00â€“18:00</p>
+        <p class="footer-text">კვირა: დახურულია</p>
+
+        <div class="footer-social">
+          <a href="https://www.facebook.com/NasakhiLLC" target="_blank" rel="noopener noreferrer" class="footer-social-link">Facebook</a>
+          <a href="https://www.linkedin.com/company/nasakhi/" target="_blank" rel="noopener noreferrer" class="footer-social-link">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+       JAVASCRIPT
+  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+  <script>
+    // Scroll â€” header background
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+
+    // Hamburger toggle
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const iconMenu = hamburger.querySelector('.icon-menu');
+    const iconClose = hamburger.querySelector('.icon-close');
+
+    hamburger.addEventListener('click', () => {
+      const open = !mobileMenu.classList.contains('open');
+      mobileMenu.classList.toggle('open', open);
+      mobileMenu.style.display = open ? 'block' : 'none';
+      iconMenu.style.display = open ? 'none' : 'block';
+      iconClose.style.display = open ? 'block' : 'none';
+    });
+
+    // Mobile submenu toggles
+    document.querySelectorAll('.mobile-toggle').forEach((toggle) => {
+      toggle.addEventListener('click', () => {
+        const group = toggle.parentElement;
+        const isOpen = group.classList.contains('open');
+
+        document.querySelectorAll('.mobile-nav-group').forEach((item) => {
+          const isCurrent = item === group;
+          item.classList.toggle('open', isCurrent && !isOpen);
+          const btn = item.querySelector('.mobile-toggle');
+          if (btn) {
+            btn.setAttribute('aria-expanded', String(isCurrent && !isOpen));
+          }
+        });
+      });
+    });
+
+    // Close menu when a mobile link is clicked
+    document.querySelectorAll('.mobile-link').forEach((link) => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        mobileMenu.style.display = 'none';
+        iconMenu.style.display = 'block';
+        iconClose.style.display = 'none';
+      });
+    });
+
+    // Dropdown hover
+    document.querySelectorAll('.has-dropdown').forEach((item) => {
+      const dropdown = item.querySelector('.dropdown');
+      item.addEventListener('mouseenter', () => dropdown.style.display = 'block');
+      item.addEventListener('mouseleave', () => dropdown.style.display = 'none');
+    });
+
+    // Language toggle
+    const langBtn = document.getElementById('lang-btn');
+    langBtn.addEventListener('click', () => {
+      langBtn.textContent = langBtn.textContent === 'GE' ? 'EN' : 'GE';
+    });
+  </script>
+
+<script data-language-link="en">document.getElementById('lang-btn').addEventListener('click', () => { window.location.href = window.location.href.replace('/GE/', '/EN/') })</script>
+</body>
+</html>
+

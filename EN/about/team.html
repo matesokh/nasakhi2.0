@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -14,10 +14,10 @@
 
   <div class="root">
 
-    <!-- ═══════════════════ HEADER / NAV ═══════════════════ -->
+  
     <header id="site-header">
       <nav class="nav-inner">
-        <a href="#top" class="logo">
+        <a href="../index.html" class="logo">
           <img src="../images/header.png" alt="Nasakhi logo" class="logo-img" />
           <div class="logo-text">
             <span class="logo-name">NASAKHI</span>
@@ -71,7 +71,7 @@
             </button>
           </div>
 
-          <button class="lang-btn" id="lang-btn">GE</button>
+          <button class="lang-btn" id="lang-btn" type="button">GE</button>
         </div>
 
         <button class="hamburger" id="hamburger" aria-label="Toggle menu">
@@ -122,12 +122,10 @@
         <a href="../index.html#contact" class="mobile-link">Contact</a>
       </div>
     </header>
-    <!-- ══════════════════════════════════════════════════════ -->
-
 
     <main style="zoom:.8">
 
-      <!-- ═══════════════════ HERO ══════════════════════════ -->
+   
       <section class="team-hero">
         <!-- Background image -->
         <div class="hero-bg">
@@ -137,17 +135,14 @@
 
         <!-- Text block -->
         <div class="hero-text">
-          <div class="hero-eyebrow">01 — NASAKHI PEOPLE</div>
+          <div class="hero-eyebrow">NASAKHI PEOPLE</div>
           <h1 class="hero-title">MEET<br />THE <span class="copper italic">TEAM</span></h1>
           <div class="hero-sub">
             GREAT <strong>RESULTS DEPEND ON A PROFFESIONAL</strong> TEAM
           </div>
         </div>
       </section>
-      <!-- ══════════════════════════════════════════════════════ -->
 
-
-      <!-- ═══════════════════ COLLECTIVE PRACTICE ═══════════ -->
       <section class="collective-section">
         <div class="collective-left">
           <div class="copper-label">Collective practice</div>
@@ -228,7 +223,7 @@
         <p>
           DRIVEN BY A SHARED VISION AND PASSION FOR EXCELLENCE, OUR TEAM APPROACHES EACH PROJECT
           NOT JUST AS A TASK TO COMPLETE, BUT AS AN OPPORTUNITY TO CREATE LASTING VALUE. IT IS THIS
-          SPIRIT OF COLLABORATION, CREATIVITY, AND DEDICATION THAT DEFINES NASAKHI — A TEAM WHERE
+          SPIRIT OF COLLABORATION, CREATIVITY, AND DEDICATION THAT DEFINES NASAKHI A TEAM WHERE
           <span class="copper italic">IDEAS.</span> BECOME <span class="copper italic">STRUCTURES.</span>
         </p>
       </section>
@@ -246,7 +241,7 @@
           class="footer-logo"
         />
         <p class="footer-brand-text">
-          Complete structural services — from structural design to author supervision. Tbilisi, Georgia.
+          Complete structural services from structural design to author supervision. Tbilisi, Georgia.
         </p>
       </div>
 
@@ -270,7 +265,7 @@
 
       <div class="footer-col">
         <h4 class="footer-heading">Working Hours</h4>
-        <p class="footer-text">Mon–Fri: 10:00–19:00</p>
+        <p class="footer-text">Monday-Friday: 10:00–19:00</p>
         <p class="footer-text">Saturday: 12:00–18:00</p>
         <p class="footer-text">Sunday: Closed</p>
 
@@ -286,7 +281,7 @@
   </div><!-- /root -->
 
   <script>
-    // Scroll — header background
+    // Scroll â€” header background
     const header = document.getElementById('site-header')
     window.addEventListener('scroll', () => {
       header.classList.toggle('scrolled', window.scrollY > 40)
@@ -341,10 +336,10 @@
 
     // Language toggle
     const langBtn = document.getElementById('lang-btn')
-    langBtn.addEventListener('click', () => {
-      langBtn.textContent = langBtn.textContent === 'GE' ? 'EN' : 'GE'
-    })
+    langBtn.addEventListener('click', () => { window.location.href = window.location.href.replace('/EN/', '/GE/') })
   </script>
 
+<script data-language-link="ge">document.getElementById('lang-btn').addEventListener('click', () => { window.location.href = window.location.href.replace('/EN/', '/GE/') })</script>
 </body>
 </html>
+

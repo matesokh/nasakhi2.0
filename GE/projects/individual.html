@@ -1,0 +1,475 @@
+﻿<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nasakhi â€” ინდივიდუალური სახლები</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../projectscss/individual.css"/>
+  <link rel="icon" href="../Images/axali logo.png">
+</head>
+<body>
+
+  <header id="site-header">
+    <nav class="nav-inner">
+      <a href="../index.html#top" class="logo">
+        <img src="../images/header.png" alt="Nasakhi logo" class="logo-img" />
+        <div class="logo-text"><span class="logo-name">NASAKHI</span></div>
+      </a>
+
+      <div class="desktop-nav" id="desktop-nav">
+        <div class="nav-item"><button class="nav-btn" type="button"><a href="../index.html" class="nav-anchor">მთავარი</a></button></div>
+        <div class="nav-item has-dropdown">
+          <button class="nav-btn" type="button">ჩვენ შესახებ <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg></button>
+          <div class="dropdown">
+            <a href="../about/overview.html" class="dropdown-link">ჩვენ შესახებ</a>
+            <a href="../about/partners.html" class="dropdown-link">პარტნიორები</a>
+            <a href="../about/team.html" class="dropdown-link">გუნდი</a>
+          </div>
+        </div>
+        <div class="nav-item has-dropdown">
+          <button class="nav-btn nav-btn--active" type="button">პროექტები <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg></button>
+          <div class="dropdown">
+            <a href="multystorey.html" class="dropdown-link">მრავალბინიანი შენობები</a>
+            <a href="comercial.html" class="dropdown-link">კომერციული შენობები</a>
+            <a href="reconstruction.html" class="dropdown-link">რეკონსტრუქციები</a>
+          </div>
+        </div>
+        <div class="nav-item"><button class="nav-btn" type="button"><a href="../about/services.html" class="nav-anchor">სერვისები</a></button></div>
+        <div class="nav-item"><button class="nav-btn" type="button"><a href="../about/contact.html" class="nav-anchor">კონტაქტი</a></button></div>
+        <button class="lang-btn" id="lang-btn" type="button">GE</button>
+      </div>
+
+      <button class="hamburger" id="hamburger" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="icon-menu" width="24" height="24" viewBox="0 0 24 24" fill="none"><line x1="4" y1="8" x2="20" y2="8" stroke="currentColor" stroke-width="1.5" /><line x1="4" y1="14" x2="20" y2="14" stroke="currentColor" stroke-width="1.5" /><line x1="4" y1="20" x2="20" y2="20" stroke="currentColor" stroke-width="1.5" /></svg>
+        <svg class="icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 6L18 18M6 18L18 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg>
+      </button>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="../index.html" class="mobile-link">მთავარი</a>
+      <div class="mobile-nav-group">
+        <button class="mobile-toggle" type="button" aria-expanded="false"><span>ჩვენ შესახებ</span><svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg></button>
+        <div class="mobile-submenu">
+          <a href="../about/overview.html" class="mobile-link">ჩვენ შესახებ</a>
+          <a href="../about/partners.html" class="mobile-link">პარტნიორები</a>
+          <a href="../about/team.html" class="mobile-link">გუნდი</a>
+        </div>
+      </div>
+      <div class="mobile-nav-group open">
+        <button class="mobile-toggle" type="button" aria-expanded="true"><span>პროექტები</span><svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg></button>
+        <div class="mobile-submenu">
+          <a href="multystorey.html" class="mobile-link">მრავალბინიანი შენობები</a>
+          <a href="comercial.html" class="mobile-link">კომერციული შენობები</a>
+          <a href="reconstruction.html" class="mobile-link">რეკონსტრუქციები</a>
+        </div>
+      </div>
+      <a href="../about/services.html" class="mobile-link">სერვისები</a>
+      <a href="../about/contact.html" class="mobile-link">კონტაქტი</a>
+    </div>
+  </header>
+
+  <!-- MAIN: PROJECT INDEX -->
+  <main class="main-wrap">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <p class="label-eyebrow">პროექტები / Individual home</p>
+          <h1 class="hero-title">When the foundation of your home stands sure, you can dwell in lasting peace.</h1>
+        </div>
+        <div class="hero-right">
+          <p class="hero-desc">A selection of structural design projects for individual homes across Georgia.</p>
+          <p class="hero-meta">&nbsp;</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARCHIVE SECTION -->
+    <section class="archive-section">
+      <div class="archive-header">
+        <span>Individual homes archive</span>
+        <span>Click a home for details</span>
+      </div>
+
+      <div class="projects-grid">
+
+        <a href="../individualhomesprojects/lisinew.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/lisinew.png" alt="Lisi Residence project view" class="card-img" />
+            <span class="card-index">01</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Lisi</h2>
+            <p class="card-location">Tbilisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../individualhomesprojects/saguramobiji.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/sagumarobiji.png" alt="Saguramo Residence project view" class="card-img" />
+            <span class="card-index">02</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Saguramo</h2>
+            <p class="card-location">Saguramo, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../individualhomesprojects/saguramoaxali.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/saguramo.png" alt="Muxatckaro Residence project view" class="card-img" />
+            <span class="card-index">03</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Saguramo</h2>
+            <p class="card-location">Saguramo, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../individualhomesprojects/gardabani1.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/teleti2.jpg" alt="Tbilisi Hills Residence I project view" class="card-img" />
+            <span class="card-index">04</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Gardabani</h2>
+            <p class="card-location">Gardabani, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../individualhomesprojects/gardabani2.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/teleti1.png" alt="Tbilisi Hills Residence II project view" class="card-img" />
+            <span class="card-index">05</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Gardabani</h2>
+            <p class="card-location">Gardabani, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../individualhomesprojects/jukakukh.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/private.png" alt="Private Residence project view" class="card-img" />
+            <span class="card-index">06</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Dabatskneti</h2>
+            <p class="card-location">Tbilisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../individualhomesprojects/tsavkisikvara.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/kvara.png" alt="Kvara Residence project view" class="card-img" />
+            <span class="card-index">07</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Tsavkisi </h2>
+            <p class="card-location">Tbilisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../individualhomesprojects/mukhatskaro.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/muxatckaro.png" alt="Kveliashvili Residence project view" class="card-img" />
+            <span class="card-index">08</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Mukhatskharo </h2>
+            <p class="card-location">Mtskheta, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../individualhomesprojects/lisi.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/lisibeitrishvili.png" alt="Lisi Â· Beitrishvili Residence project view" class="card-img" />
+            <span class="card-index">09</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Lisi </h2>
+            <p class="card-location">Lisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../individualhomesprojects/dabatskneti.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/dabawkneti.png" alt="Tskneti Residence project view" class="card-img" />
+            <span class="card-index">10</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Dabatskneti</h2>
+            <p class="card-location">Tskneti, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../individualhomesprojects/bakhmaro.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/bakhmaro.png" alt="Bakhmaro Residence project view" class="card-img" />
+            <span class="card-index">11</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Bakhmaro</h2>
+            <p class="card-location">Bakhmaro, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../individualhomesprojects/bazaleti.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/bazaleti.png" alt="Bazaleti Residence project view" class="card-img" />
+            <span class="card-index">12</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Bazaleti</h2>
+            <p class="card-location">Bazaleti, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../individualhomesprojects/buknari.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/buknarimain.png" alt="Buknari Residence project view" class="card-img" />
+            <span class="card-index">13</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Buknari</h2>
+            <p class="card-location">Buknari, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../individualhomesprojects/chalipirebi.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/chalipirebi.png" alt="Chalipirebi Residence II project view" class="card-img" />
+            <span class="card-index">14</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Chalipirebi</h2>
+            <p class="card-location">Tbilisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../individualhomesprojects/digomi.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/digomishevchenko.png" alt="Digomi Residence project view" class="card-img" />
+            <span class="card-index">15</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Digomi</h2>
+            <p class="card-location">Tbilisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../individualhomesprojects/shankrevani.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/shankrevani.png" alt="Shankrevani Residence project view" class="card-img" />
+            <span class="card-index">16</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Shankrevani</h2>
+            <p class="card-location">Shankrevani, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../individualhomesprojects/tbilisi.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/TBILISI.png" alt="Magnolia Residence IV project view" class="card-img" />
+            <span class="card-index">17</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Magnolia ST</h2>
+            <p class="card-location">Tbilisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../individualhomesprojects/tetritskahro.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/tetritskaro.png" alt="Tetritskaro Residence project view" class="card-img" />
+            <span class="card-index">18</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Tetritskaro</h2>
+            <p class="card-location">Tetritskaro, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../individualhomesprojects/tsavkisimarg.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/tsavkisi.png" alt="Tsavkisi Residence project view" class="card-img" />
+            <span class="card-index">19</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Tsavkisi</h2>
+            <p class="card-location">Tsavkisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../individualhomesprojects/mestia.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/mestia.png" alt="Mestia Residence project view" class="card-img" />
+            <span class="card-index">20</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Mestia</h2>
+            <p class="card-location">Mestia, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../individualhomesprojects/kaklebidadiani.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/kaklebi.png" alt="Kaklebi Residence I project view" class="card-img" />
+            <span class="card-index">21</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Kaklebi</h2>
+            <p class="card-location">Tbilisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../individualhomesprojects/kaklebishevchenko.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/kaklebishevchenko.png" alt="Kaklebi Residence II project view" class="card-img" />
+            <span class="card-index">22</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Kaklebi</h2>
+            <p class="card-location">Tbilisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../individualhomesprojects/saguramo.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/kavelashvilirar.png" alt="Kavelashvili Residence project view" class="card-img" />
+            <span class="card-index">23</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Saguramo</h2>
+            <p class="card-location">Saguramo, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../individualhomesprojects/tsavkisikanteladze.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/kanteladze juka.png" alt="Levan Kanteladze Residence project view" class="card-img" />
+            <span class="card-index">24</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Tsavkisi</h2>
+            <p class="card-location">Tbilisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../individualhomesprojects/tkhinvala.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/private2.png" alt="Private Residence II project view" class="card-img" />
+            <span class="card-index">25</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Tkhinvala</h2>
+            <p class="card-location">Tkhinvala, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../individualhomesprojects/tsavkisishevchenko.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/wavkisishevchenko.png" alt="Tsavkisi Residence II project view" class="card-img" />
+            <span class="card-index">26</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Tsavkisi</h2>
+            <p class="card-location">Tsavkisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../individualhomesprojects/tsavkisikovz.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/wavkisikovziradze.png" alt="Tsavkisi Residence III project view" class="card-img" />
+            <span class="card-index">27</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Tsavkisi</h2>
+            <p class="card-location">Tsavkisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../individualhomesprojects/tskneti.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/wkneti.png" alt="Tskneti Residence II project view" class="card-img" />
+            <span class="card-index">28</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Tskneti</h2>
+            <p class="card-location">Tskneti, Georgia</p>
+          </div>
+        </a>
+
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Scroll header
+    const header = document.getElementById('site-header');
+    if (header) {
+      window.addEventListener('scroll', () => {
+        header.classList.toggle('scrolled', window.scrollY > 24);
+      }, { passive: true });
+    }
+
+    // Hamburger menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (hamburger && mobileMenu) {
+      hamburger.addEventListener('click', () => {
+        const isOpen = mobileMenu.classList.toggle('open');
+        hamburger.classList.toggle('open', isOpen);
+        hamburger.setAttribute('aria-expanded', String(isOpen));
+      });
+    }
+
+    // Mobile submenus
+    document.querySelectorAll('.mobile-nav-group').forEach((group) => {
+      const toggle = group.querySelector('.mobile-toggle');
+      if (!toggle) return;
+
+      toggle.addEventListener('click', () => {
+        const isOpen = group.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+      });
+    });
+  </script>
+<script data-language-link="en">document.getElementById('lang-btn').addEventListener('click', () => { window.location.href = window.location.href.replace('/GE/', '/EN/') })</script>
+</body>
+</html>
+

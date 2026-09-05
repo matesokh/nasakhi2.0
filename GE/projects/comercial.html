@@ -1,0 +1,377 @@
+﻿<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nasakhi â€” კომერციული შენობები</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../projectscss/comercial.css">
+  <link rel="icon" href="../Images/axali logo.png">
+</head>
+<body>
+
+  <header id="site-header">
+    <nav class="nav-inner">
+      <a href="../index.html#top" class="logo">
+        <img src="../images/header.png" alt="Nasakhi logo" class="logo-img" />
+        <div class="logo-text"><span class="logo-name">NASAKHI</span></div>
+      </a>
+
+      <div class="desktop-nav" id="desktop-nav">
+        <div class="nav-item"><button class="nav-btn" type="button"><a href="../index.html" class="nav-anchor">მთავარი</a></button></div>
+        <div class="nav-item has-dropdown">
+          <button class="nav-btn" type="button">ჩვენ შესახებ <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg></button>
+          <div class="dropdown">
+            <a href="../about/overview.html" class="dropdown-link">ჩვენ შესახებ</a>
+            <a href="../about/partners.html" class="dropdown-link">პარტნიორები</a>
+            <a href="../about/team.html" class="dropdown-link">გუნდი</a>
+          </div>
+        </div>
+        <div class="nav-item has-dropdown">
+          <button class="nav-btn nav-btn--active" type="button">პროექტები <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg></button>
+          <div class="dropdown">
+            <a href="multystorey.html" class="dropdown-link">მრავალბინიანი შენობები</a>
+            <a href="individual.html" class="dropdown-link">ინდივიდუალური სახლები</a>
+            <a href="reconstruction.html" class="dropdown-link">რეკონსტრუქციები</a>
+          </div>
+        </div>
+        <div class="nav-item"><button class="nav-btn" type="button"><a href="../about/services.html" class="nav-anchor">სერვისები</a></button></div>
+        <div class="nav-item"><button class="nav-btn" type="button"><a href="../about/contact.html" class="nav-anchor">კონტაქტი</a></button></div>
+        <button class="lang-btn" id="lang-btn" type="button">GE</button>
+      </div>
+
+      <button class="hamburger" id="hamburger" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="icon-menu" width="24" height="24" viewBox="0 0 24 24" fill="none"><line x1="4" y1="8" x2="20" y2="8" stroke="currentColor" stroke-width="1.5" /><line x1="4" y1="14" x2="20" y2="14" stroke="currentColor" stroke-width="1.5" /><line x1="4" y1="20" x2="20" y2="20" stroke="currentColor" stroke-width="1.5" /></svg>
+        <svg class="icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 6L18 18M6 18L18 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg>
+      </button>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="../index.html" class="mobile-link">მთავარი</a>
+      <div class="mobile-nav-group">
+        <button class="mobile-toggle" type="button" aria-expanded="false"><span>ჩვენ შესახებ</span><svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg></button>
+        <div class="mobile-submenu">
+          <a href="../about/overview.html" class="mobile-link">ჩვენ შესახებ</a>
+          <a href="../about/partners.html" class="mobile-link">პარტნიორები</a>
+          <a href="../about/team.html" class="mobile-link">გუნდი</a>
+        </div>
+      </div>
+      <div class="mobile-nav-group open">
+        <button class="mobile-toggle" type="button" aria-expanded="true"><span>პროექტები</span><svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg></button>
+        <div class="mobile-submenu">
+          <a href="multystorey.html" class="mobile-link">მრავალბინიანი შენობები</a>
+          <a href="individual.html" class="mobile-link">ინდივიდუალური სახლები</a>
+          <a href="reconstruction.html" class="mobile-link">რეკონსტრუქციები</a>
+        </div>
+      </div>
+      <a href="../about/services.html" class="mobile-link">სერვისები</a>
+      <a href="../about/contact.html" class="mobile-link">კონტაქტი</a>
+    </div>
+  </header>
+
+  <!-- MAIN: PROJECT INDEX -->
+  <main class="main-wrap">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <p class="label-eyebrow">პროექტები / Commercial buildings</p>
+          <h1 class="hero-title">Every commercial space stands as a testament to vision, resilience, and strength.</h1>
+        </div>
+        <div class="hero-right">
+          <p class="hero-desc">A selection of structural design projects for commercial buildings across Georgia.</p>
+          <p class="hero-meta">&nbsp;</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARCHIVE SECTION -->
+    <section class="archive-section">
+      <div class="archive-header">
+        <span>Commercial buildings archive</span>
+        <span>Click a project for details</span>
+      </div>
+
+      <div class="projects-grid">
+
+        <a href="../comercialbuildings/advokati.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/advokatebi.png" alt="Advocates Office project view" class="card-img" />
+            <span class="card-index">01</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Office</h2>
+            <p class="card-location">Tbilisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../comercialbuildings/angari.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/angari.png" alt="Angari project view" class="card-img" />
+            <span class="card-index">02</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Hangar</h2>
+            <p class="card-location">Tbilisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../comercialbuildings/muxiani.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/mukhiani.png" alt="Muxiani CafÃ© project view" class="card-img" />
+            <span class="card-index">03</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">CafÃ©</h2>
+            <p class="card-location">Tbilisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../comercialbuildings/chrdili.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/chrdili.png" alt="Chrdili project view" class="card-img" />
+            <span class="card-index">04</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title"> Kharagauli School</h2>
+            <p class="card-location">Kharagauli, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../comercialbuildings/mtskheta.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/dzegvi.png" alt="Dzegvi project view" class="card-img" />
+            <span class="card-index">05</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Hotel</h2>
+            <p class="card-location">Mtskheta, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../comercialbuildings/cucxvati.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/skola tsutskvati.png" alt="Tsutskvati School project view" class="card-img" />
+            <span class="card-index">06</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Tsutskvati School</h2>
+            <p class="card-location">Tsutskvati, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../comercialbuildings/tamaco.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/tambaco.png" alt="Tambaco project view" class="card-img" />
+            <span class="card-index">07</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Warehouse</h2>
+            <p class="card-location">Tbilisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../comercialbuildings/tolebi.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/tolebi.png" alt="Tolebi project view" class="card-img" />
+            <span class="card-index">08</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Samtredia School </h2>
+            <p class="card-location">Samtredia, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../comercialbuildings/vezirovi.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/vezirovi.png" alt="Vezirovi Hotel project view" class="card-img" />
+            <span class="card-index">09</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Hotel</h2>
+            <p class="card-location">Tbilisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../comercialbuildings/chiatura.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/zodi.png" alt="Zodi project view" class="card-img" />
+            <span class="card-index">10</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Zodi</h2>
+            <p class="card-location">Chiatura, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../comercialbuildings/terjola.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/dzveri.png" alt="Dzveri project view" class="card-img" />
+            <span class="card-index">11</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Dzveri School</h2>
+            <p class="card-location">Terjola, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../comercialbuildings/grigoleti.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/grigoleti.png" alt="Grigoleti project view" class="card-img" />
+            <span class="card-index">12</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Hotel</h2>
+            <p class="card-location">Grigoleti, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../comercialbuildings/kutaisi.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/kutaisi.png" alt="Kutaisi project view" class="card-img" />
+            <span class="card-index">13</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">School</h2>
+            <p class="card-location">Kutaisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../comercialbuildings/lilo.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/lilo khizanishvili.png" alt="Lilo Â· Khizanishvili project view" class="card-img" />
+            <span class="card-index">14</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Multifunctional Building</h2>
+            <p class="card-location">Tbilisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../comercialbuildings/monolith.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/monolith.png" alt="Monolith project view" class="card-img" />
+            <span class="card-index">15</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Kindergarten</h2>
+            <p class="card-location">Tbilisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../comercialbuildings/natakhtari.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/natakhtari.png" alt="Natakhtari project view" class="card-img" />
+            <span class="card-index">16</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">School</h2>
+            <p class="card-location">Natakhtari, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../comercialbuildings/rustavi.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/rustavisport.png" alt="Rustavi project view" class="card-img" />
+            <span class="card-index">17</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Sportpalace</h2>
+            <p class="card-location">Rustavi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../comercialbuildings/saguris.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/sadgurismoedani.png" alt="Station Square project view" class="card-img" />
+            <span class="card-index">18</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Multifunctional Building</h2>
+            <p class="card-location">Tbilisi, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../comercialbuildings/saguramo.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/saguramo- shenchenko.png" alt="Saguramo project view" class="card-img" />
+            <span class="card-index">19</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Commercial Space</h2>
+            <p class="card-location">Saguramo, Georgia</p>
+          </div>
+        </a>
+
+        <a href="../comercialbuildings/chardaxi.html" class="project-card">
+          <figure class="card-figure">
+            <img src="images/skola chardakhi.png" alt="Chardakhi School project view" class="card-img" />
+            <span class="card-index">20</span>
+            <span class="card-hover-label">View project â†—</span>
+          </figure>
+          <div class="card-info">
+            <h2 class="card-title">Chardakhi School</h2>
+            <p class="card-location">Chardakhi, Georgia</p>
+          </div>
+        </a>
+
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const header = document.getElementById('site-header');
+    if (header) {
+      window.addEventListener('scroll', () => {
+        header.classList.toggle('scrolled', window.scrollY > 24);
+      }, { passive: true });
+    }
+
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (hamburger && mobileMenu) {
+      hamburger.addEventListener('click', () => {
+        const isOpen = mobileMenu.classList.toggle('open');
+        hamburger.classList.toggle('open', isOpen);
+        hamburger.setAttribute('aria-expanded', String(isOpen));
+      });
+    }
+
+    document.querySelectorAll('.mobile-nav-group').forEach((group) => {
+      const toggle = group.querySelector('.mobile-toggle');
+      if (!toggle) return;
+
+      toggle.addEventListener('click', () => {
+        const isOpen = group.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+      });
+    });
+  </script>
+<script data-language-link="en">document.getElementById('lang-btn').addEventListener('click', () => { window.location.href = window.location.href.replace('/GE/', '/EN/') })</script>
+</body>
+</html>
+
+
