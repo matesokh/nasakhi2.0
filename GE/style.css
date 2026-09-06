@@ -805,6 +805,36 @@ nav {
   color: rgba(255, 255, 255, 0.2);
 }
 
+body,
+button,
+input,
+textarea {
+  font-family: 'Noto Sans Georgian', 'Work Sans', sans-serif;
+}
+
+.logo-name,
+.hero-title,
+.stat-num,
+.section-title,
+.service-num,
+.service-title,
+.project-title,
+.about-title,
+.about-stat-num,
+.about-badge-year,
+.contact-title {
+  font-family: 'Noto Serif Georgian', 'Fraunces', serif;
+}
+
+.footer,
+.footer-heading,
+.footer-link,
+.footer-text,
+.footer-social-link,
+.footer-bottom-text {
+  font-family: 'Noto Sans Georgian', 'IBM Plex Mono', monospace;
+}
+
 /* ===== Responsive: tablet (≤1024px) → 2 columns ===== */
 @media (max-width: 1024px) {
   .footer-grid {

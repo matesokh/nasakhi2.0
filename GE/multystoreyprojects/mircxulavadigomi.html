@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ka">
 <head>
   <meta charset="UTF-8" />
@@ -13,7 +13,7 @@
   <header id="site-header">
     <nav class="nav-inner">
       <a href="../index.html" class="logo">
-        <img src="../images/header.png" alt="Nasakhi logo" class="logo-img" />
+        <img src="../images/header.png" alt="ნასახის ლოგო" class="logo-img" />
         <div class="logo-text">
           <span class="logo-name">NASAKHI</span>
         </div>
@@ -70,7 +70,7 @@
         <button class="lang-btn" id="lang-btn" type="button">EN</button>
       </div>
 
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <button class="hamburger" id="hamburger" aria-label="მენიუს გახსნა/დახურვა">
         <svg class="icon-menu" width="24" height="24" viewBox="0 0 24 24" fill="none">
           <line x1="4" y1="8" x2="20" y2="8" stroke="currentColor" stroke-width="1.5" />
           <line x1="4" y1="14" x2="20" y2="14" stroke="currentColor" stroke-width="1.5" />
@@ -121,12 +121,12 @@
 
 <main class="main-wrap">
     <section class="detail-hero">
-      <img src="../projects/images/dididigomimircxulava.png" alt="Multi-storey Building" class="detail-hero-bg" />
+      <img src="../projects/images/dididigomimircxulava.png" alt="მრავალსართულიანი შენობა" class="detail-hero-bg" />
       <div class="detail-hero-overlay"></div>
       <div class="detail-hero-inner">
-        <a href="../projects/multystorey.html" class="detail-back" aria-label="Back to multi-apartment projects"></a>
+        <a href="../projects/multystorey.html" class="detail-back" aria-label="მრავალბინიანი შენობების პროექტებზე დაბრუნება"></a>
         <div class="detail-hero-text">
-          <h1 class="detail-title">Multi-Storey Building</h1>
+          <h1 class="detail-title">მრავალსართულიანი შენობა</h1>
           <p class="detail-subtitle">Tbilisi, Didi Dighomi</p>
         </div>
       </div>
@@ -134,56 +134,56 @@
 
     <section class="detail-body">
       <aside class="detail-profile">
-        <p class="profile-label">Project profile</p>
+        <p class="profile-label">პროექტის პროფილი</p>
         <dl class="profile-list">
           <div class="profile-row">
             <dt>მდებარეობა</dt>
             <dd>Tbilisi, Didi Dighomi</dd>
           </div>
           <div class="profile-row">
-            <dt>Category</dt>
-            <dd> Multi-Storey Building</dd>
+            <dt>კატეეტორია</dt>
+            <dd> მრავალსართულიანი შენობა</dd>
           </div>
           <div class="profile-row">
-            <dt>Architecture</dt>
+            <dt>არქიტექტურა</dt>
             <dd>Opizers</dd>
           </div>
           <div class="profile-row">
-            <dt>Status</dt>
-            <dd>Ongoing</dd>
+            <dt>სტატუსი</dt>
+            <dd>მიმდინარე</dd>
           </div>
         </dl>
       </aside>
 
       <div class="detail-gallery">
         <div class="gallery-grid">
-          <button class="gallery-item gallery-item--wide" onclick="openLightbox(0)" aria-label="Expand image 1">
-            <img src="images/mircxulavadigomi1.jpeg.png" alt="Multi-storey Building project view 1" class="gallery-img" />
+          <button class="gallery-item gallery-item--wide" onclick="openLightbox(0)" aria-label="სურათის გაფართოება 1">
+            <img src="images/mircxulavadigomi1.jpeg.png" alt="მრავალსართულიანი შენობა პროექტის ხედი 1" class="gallery-img" />
             <span class="gallery-overlay"></span>
-            <span class="gallery-expand">Expand </span>
+            <span class="gallery-expand">გაფართოება </span>
           </button>
 
-          <button class="gallery-item" onclick="openLightbox(1)" aria-label="Expand image 2">
-            <img src="images/mircxulavadigomi2.jpeg" alt="Multi-storey Building project view 2" class="gallery-img" />
+          <button class="gallery-item" onclick="openLightbox(1)" aria-label="სურათის გაფართოება 2">
+            <img src="images/mircxulavadigomi2.jpeg" alt="მრავალსართულიანი შენობა პროექტის ხედი 2" class="gallery-img" />
             <span class="gallery-overlay"></span>
-            <span class="gallery-expand">Expand </span>
+            <span class="gallery-expand">გაფართოება </span>
           </button>
 
-          <button class="gallery-item" onclick="openLightbox(2)" aria-label="Expand image 3">
-            <img src="images/mircxulavadigomi3.png" alt="Multi-storey Building project view 3" class="gallery-img" />
+          <button class="gallery-item" onclick="openLightbox(2)" aria-label="სურათის გაფართოება 3">
+            <img src="images/mircxulavadigomi3.png" alt="მრავალსართულიანი შენობა პროექტის ხედი 3" class="gallery-img" />
             <span class="gallery-overlay"></span>
-            <span class="gallery-expand">Expand </span>
+            <span class="gallery-expand">გაფართოება </span>
           </button>
         </div>
       </div>
     </section>
   </main>
 
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Expanded project image">
-    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close expanded image">Close</button>
-    <button class="lightbox-prev" onclick="shiftLightbox(-1)" aria-label="Previous image">←</button>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="გაფართოებაed project image">
+    <button class="lightbox-close" onclick="closeLightbox()" aria-label="გაფართოებული სურათის დახურვა">Close</button>
+    <button class="lightbox-prev" onclick="shiftLightbox(-1)" aria-label="წინა სურათი">←</button>
     <img src="" alt="" class="lightbox-img" id="lightbox-img" onclick="event.stopPropagation()" />
-    <button class="lightbox-next" onclick="shiftLightbox(1)" aria-label="Next image">→</button>
+    <button class="lightbox-next" onclick="shiftLightbox(1)" aria-label="შემდეგი სურათი">→</button>
   </div>
   <script>
   

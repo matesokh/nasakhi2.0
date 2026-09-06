@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ka">
 <head>
   <meta charset="UTF-8" />
@@ -15,7 +15,7 @@
   <header id="site-header">
     <nav class="nav-inner">
       <a href="../index.html" class="logo">
-        <img src="../images/header.png" alt="Nasakhi logo" class="logo-img" />
+        <img src="../images/header.png" alt="ნასახის ლოგო" class="logo-img" />
         <div class="logo-text">
           <span class="logo-name">NASAKHI</span>
         </div>
@@ -72,7 +72,7 @@
         <button class="lang-btn" id="lang-btn" type="button">EN</button>
       </div>
 
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <button class="hamburger" id="hamburger" aria-label="მენიუს გახსნა/დახურვა">
         <svg class="icon-menu" width="24" height="24" viewBox="0 0 24 24" fill="none">
           <line x1="4" y1="8" x2="20" y2="8" stroke="currentColor" stroke-width="1.5" />
           <line x1="4" y1="14" x2="20" y2="14" stroke="currentColor" stroke-width="1.5" />
@@ -129,9 +129,9 @@
       <img src="../projects/images/marneuli2c.png" alt="Marneuli Residence I building view" class="detail-hero-bg" />
       <div class="detail-hero-overlay"></div>
       <div class="detail-hero-inner">
-        <a href="../projects/multystorey.html" class="detail-back" aria-label="Back to multi-apartment projects"></a>
+        <a href="../projects/multystorey.html" class="detail-back" aria-label="მრავალბინიანი შენობების პროექტებზე დაბრუნება"></a>
         <div class="detail-hero-text">
-          <h1 class="detail-title">Multi-Storey Building</h1>
+          <h1 class="detail-title">მრავალსართულიანი შენობა</h1>
           <p class="detail-subtitle">Tbilisi, Georgia</p>
         </div>
       </div>
@@ -140,25 +140,25 @@
     <!-- PROFILE + GALLERY -->
     <section class="detail-body">
 
-      <!-- LEFT: Project Profile -->
+      <!-- LEFT: პროექტის პროფილი -->
       <aside class="detail-profile">
-        <p class="profile-label">Project profile</p>
+        <p class="profile-label">პროექტის პროფილი</p>
         <dl class="profile-list">
           <div class="profile-row">
             <dt>მდებარეობა</dt>
             <dd>Cholokashvili,Tbilisi</dd>
           </div>
           <div class="profile-row">
-            <dt>Category</dt>
-            <dd> Multi-Storey Building</dd>
+            <dt>კატეეტორია</dt>
+            <dd> მრავალსართულიანი შენობა</dd>
           </div>
           <div class="profile-row">
-            <dt>Architecture</dt>
+            <dt>არქიტექტურა</dt>
             <dd>BIJI ARCHITECTURE</dd>
           </div>
           <div class="profile-row">
-            <dt>Status</dt>
-            <dd>Built</dd>
+            <dt>სტატუსი</dt>
+            <dd>აშენებული</dd>
           </div>
         </dl>
       </aside>
@@ -168,31 +168,31 @@
         <div class="gallery-grid">
 
           <!-- Image 1 â€” wide (spans full width) -->
-          <button class="gallery-item gallery-item--wide" onclick="openLightbox(0)" aria-label="Expand image 1">
+          <button class="gallery-item gallery-item--wide" onclick="openLightbox(0)" aria-label="სურათის გაფართოება 1">
             <img src="images/cholokashvili1 (2).png" alt="Marneuli Residence I faÃ§ade visualization" class="gallery-img" />
             <span class="gallery-overlay"></span>
-            <span class="gallery-expand">Expand</span>
+            <span class="gallery-expand">გაფართოება</span>
           </button>
 
           <!-- Image 2 -->
-          <button class="gallery-item" onclick="openLightbox(1)" aria-label="Expand image 2">
+          <button class="gallery-item" onclick="openLightbox(1)" aria-label="სურათის გაფართოება 2">
             <img src="images/cholokashvili 2.png"alt="Marneuli Residence I structural axonometric drawing" class="gallery-img" />
             <span class="gallery-overlay"></span>
-            <span class="gallery-expand">Expand</span>
+            <span class="gallery-expand">გაფართოება</span>
           </button>
 
           <!-- Image 3 -->
-          <button class="gallery-item" onclick="openLightbox(2)" aria-label="Expand image 3">
+          <button class="gallery-item" onclick="openLightbox(2)" aria-label="სურათის გაფართოება 3">
             <img src="images/cholokashvili3.png" alt="Marneuli Residence I structural views" class="gallery-img" />
             <span class="gallery-overlay"></span>
-            <span class="gallery-expand">Expand</span>
+            <span class="gallery-expand">გაფართოება</span>
           </button>
 
           <!-- Image 4 -->
-          <button class="gallery-item" onclick="openLightbox(3)" aria-label="Expand image 4">
+          <button class="gallery-item" onclick="openLightbox(3)" aria-label="სურათის გაფართოება 4">
             <img src="images/cholokashvili4.png" alt="Marneuli Residence I roof and landscape plan" class="gallery-img" />
             <span class="gallery-overlay"></span>
-            <span class="gallery-expand">Expand</span>
+            <span class="gallery-expand">გაფართოება</span>
           </button>
 
         </div>
@@ -202,11 +202,11 @@
   </main>
 
   <!-- LIGHTBOX -->
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Expanded project image">
-    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close expanded image">Close</button>
-    <button class="lightbox-prev" onclick="shiftLightbox(-1)" aria-label="Previous image">←</button>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="გაფართოებაed project image">
+    <button class="lightbox-close" onclick="closeLightbox()" aria-label="გაფართოებული სურათის დახურვა">Close</button>
+    <button class="lightbox-prev" onclick="shiftLightbox(-1)" aria-label="წინა სურათი">←</button>
     <img src="" alt="" class="lightbox-img" id="lightbox-img" onclick="event.stopPropagation()" />
-    <button class="lightbox-next" onclick="shiftLightbox(1)" aria-label="Next image">→</button>
+    <button class="lightbox-next" onclick="shiftLightbox(1)" aria-label="შემდეგი სურათი">→</button>
   </div>
  <script>
   
