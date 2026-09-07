@@ -1,3 +1,4 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600&family=Noto+Serif+Georgian:wght@300;400;500;600&display=swap');
 /* ── RESET ─────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -7,7 +8,7 @@ body {
   overflow-x: hidden;
   background-color: #0D0D0B;
   color: #EDE8DF;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Noto Sans Georgian', 'Work Sans', sans-serif;
 }
 
 /* ── HEADER ─────────────────────────────────────────────── */
@@ -56,7 +57,7 @@ body {
   gap: 2px;
 }
 .logo-name {
-  font-family: 'Fraunces', serif;
+  font-family: 'Noto Serif Georgian', 'Fraunces', serif;
   font-size: 22px;
   font-weight: 500;
   color: #EDE8DF;
@@ -80,7 +81,7 @@ body {
   background: none;
   border: none;
   cursor: pointer;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Noto Sans Georgian', 'Work Sans', sans-serif;
   font-size: 13px;
   font-weight: 500;
   letter-spacing: .1em;
@@ -138,7 +139,7 @@ body {
   background: none;
   border: 1px solid #2A2A25;
   cursor: pointer;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Noto Sans Georgian', 'Work Sans', sans-serif;
   font-size: 11px;
   font-weight: 500;
   letter-spacing: .1em;
@@ -188,7 +189,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Noto Sans Georgian', 'Work Sans', sans-serif;
   cursor: pointer;
 }
 .mobile-toggle svg {
@@ -287,7 +288,7 @@ body {
 }
 
 .hero-title {
-  font-family: 'Fraunces', serif;
+  font-family: 'Noto Serif Georgian', 'Fraunces', serif;
   font-size: 80px;
   font-weight: 300;
   line-height: 0.78;
@@ -455,7 +456,7 @@ body {
   background-color: black;
   color: #ffffff;
   overflow: hidden;
-  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-family: 'Noto Sans Georgian', 'Inter', ui-sans-serif, system-ui, sans-serif;
 }
 
 .footer-rule {
@@ -508,7 +509,7 @@ body {
 
 
 .footer-heading {
-  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-family: 'Noto Sans Georgian', 'IBM Plex Mono', ui-monospace, monospace;
   font-size: 0.750rem;      
   font-weight: 900;
   letter-spacing: 0.3em;
@@ -519,7 +520,7 @@ body {
 
 .footer-link,
 .footer-text {
-  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-family: 'Noto Sans Georgian', 'IBM Plex Mono', ui-monospace, monospace;
   font-size: 0.90rem;         
   margin: 0 0 0.75rem 0;
   line-height: 1.5;
@@ -553,7 +554,7 @@ body {
 }
 
 .footer-social-link {
-  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-family: 'Noto Sans Georgian', 'IBM Plex Mono', ui-monospace, monospace;
   font-size: 0.6rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -578,7 +579,7 @@ body {
 }
 
 .footer-bottom-text {
-  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-family: 'Noto Sans Georgian', 'IBM Plex Mono', ui-monospace, monospace;
   font-size: 0.5625rem;
   letter-spacing: 0.05em;
   color: rgba(255, 255, 255, 0.2);

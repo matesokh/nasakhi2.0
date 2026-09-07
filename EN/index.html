@@ -138,19 +138,19 @@
   <div class="stats-bar">
     <div class="stats-inner">
       <div class="stat">
-        <div class="stat-num">10+</div>
+        <div class="stat-num" data-count="10" data-suffix="+">0+</div>
         <div class="stat-label">Years of Practice</div>
       </div>
       <div class="stat">
-        <div class="stat-num">1000+</div>
+        <div class="stat-num" data-count="1000" data-suffix="+">0+</div>
         <div class="stat-label">Projects Completed</div>
       </div>
       <div class="stat">
-        <div class="stat-num">15+</div>
+        <div class="stat-num" data-count="15" data-suffix="+">0+</div>
         <div class="stat-label">Active Projects</div>
       </div>
       <div class="stat">
-        <div class="stat-num">80+</div>
+        <div class="stat-num" data-count="80" data-suffix="+">0+</div>
         <div class="stat-label">Completed In 2026</div>
       </div>
     </div>
@@ -352,6 +352,30 @@
       const btn = document.getElementById('lang-btn')
       btn.textContent = btn.textContent === 'GE' ? 'EN' : 'GE'
     })
+
+    const statNums = document.querySelectorAll('.stat-num[data-count]')
+    const animateStat = (el) => {
+      const target = parseInt(el.dataset.count, 10)
+      const suffix = el.dataset.suffix || ''
+      const duration = 1500
+      const start = performance.now()
+      const step = (now) => {
+        const progress = Math.min((now - start) / duration, 1)
+        const eased = 1 - Math.pow(1 - progress, 3)
+        el.textContent = Math.round(eased * target) + suffix
+        if (progress < 1) requestAnimationFrame(step)
+      }
+      requestAnimationFrame(step)
+    }
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          animateStat(entry.target)
+          statsObserver.unobserve(entry.target)
+        }
+      })
+    }, { threshold: 0.5 })
+    statNums.forEach((el) => statsObserver.observe(el))
 
     function handleSubmit(e) {
       e.preventDefault()

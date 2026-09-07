@@ -137,19 +137,19 @@
   <div class="stats-bar">
     <div class="stats-inner">
       <div class="stat">
-        <div class="stat-num">10+</div>
+        <div class="stat-num" data-count="10" data-suffix="+">0+</div>
         <div class="stat-label">ᲬᲚᲘᲐᲜᲘ ᲒᲐᲛᲝᲪᲓᲘᲚᲔᲑᲐ</div>
       </div>
       <div class="stat">
-        <div class="stat-num">1000+</div>
+        <div class="stat-num" data-count="1000" data-suffix="+">0+</div>
         <div class="stat-label">ᲨᲔᲡᲠᲣᲚᲔᲑᲣᲚᲘ ᲞᲠᲝᲔᲥᲢᲘ</div>
       </div>
       <div class="stat">
-        <div class="stat-num">15+</div>
+        <div class="stat-num" data-count="15" data-suffix="+">0+</div>
         <div class="stat-label">ᲐᲥᲢᲘᲣᲠᲘ ᲞᲠᲝᲔᲥᲢᲘ</div>
       </div>
       <div class="stat">
-        <div class="stat-num">80+</div>
+        <div class="stat-num" data-count="80" data-suffix="+">0+</div>
         <div class="stat-label">ᲨᲔᲡᲠᲣᲚᲔᲑᲣᲚᲘ 2026 ᲬᲔᲚᲡ</div>
       </div>
     </div>
@@ -180,14 +180,14 @@
           <span class="service-num">03</span>
           <div>
             <div class="service-title">საავტორო ზედამხედველობა</div>
-            <p class="service-desc">Supervision over the construction process</p>
+            <p class="service-desc">ზედამხედველობა,ვიზიტი სამშენებლო მოედანზე</p>
           </div>
         </div>
         <div class="service-item">
           <span class="service-num">04</span>
           <div>
             <div class="service-title">საკონსულტაციო სერვისებიი</div>
-            <p class="service-desc">Consulting support for construction supervision.</p>
+            <p class="service-desc">საკონსულტაციო სერვისები,ექსპერტიზა</p>
           </div>
         </div>
       </div>
@@ -197,7 +197,7 @@
   <section id="projects">
     <div class="projects-header">
       <div>
-        <div class="section-eyebrow">Selected Work</div>
+        <div class="section-eyebrow">ნამუშევრები</div>
         <h2 class="section-title">პროექტები</h2>
       </div>
       <a href="__" style=" font-size: 12px; font-weight: 500;
@@ -257,7 +257,7 @@
           <img src="https://media.base44.com/images/public/6a5c90ac8ccd38069bd9f92d/cec4d00aa_250724_P_1.png"
             alt="NASAKHI logo" class="footer-logo" />
           <p class="footer-brand-text">
-            სრული კონსტრუქციული მომსახურება კონსტრუქციული პროექტირებიდან საავტორო ზედამხედველობამდე. Tbilisi, Georgia.
+            სრული კონსტრუქციული მომსახურება კონსტრუქციული პროექტირებიდან საავტორო ზედამხედველობამდე. თბილისი, საქართველო.
           </p>
         </div>
 
@@ -281,8 +281,8 @@
 
         <div class="footer-col">
           <h4 class="footer-heading">სამუშაო საათები</h4>
-          <p class="footer-text">Monâ€“Fri: 10:00â€“19:00</p>
-          <p class="footer-text">შაბათი: 12:00â€“18:00</p>
+          <p class="footer-text">ორშაბათი–პარასკევი: 10:00–19:00</p>
+          <p class="footer-text">შაბათი: 12:00–18:00</p>
           <p class="footer-text">კვირა: დახურულია</p>
 
           <div class="footer-social">
@@ -351,6 +351,30 @@
       const btn = document.getElementById('lang-btn')
       btn.textContent = btn.textContent === 'GE' ? 'EN' : 'GE'
     })
+
+    const statNums = document.querySelectorAll('.stat-num[data-count]')
+    const animateStat = (el) => {
+      const target = parseInt(el.dataset.count, 10)
+      const suffix = el.dataset.suffix || ''
+      const duration = 1500
+      const start = performance.now()
+      const step = (now) => {
+        const progress = Math.min((now - start) / duration, 1)
+        const eased = 1 - Math.pow(1 - progress, 3)
+        el.textContent = Math.round(eased * target) + suffix
+        if (progress < 1) requestAnimationFrame(step)
+      }
+      requestAnimationFrame(step)
+    }
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          animateStat(entry.target)
+          statsObserver.unobserve(entry.target)
+        }
+      })
+    }, { threshold: 0.5 })
+    statNums.forEach((el) => statsObserver.observe(el))
 
     function handleSubmit(e) {
       e.preventDefault()

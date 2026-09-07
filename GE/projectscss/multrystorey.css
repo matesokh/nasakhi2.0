@@ -1,3 +1,4 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600&family=Noto+Serif+Georgian:wght@300;400;500;600&display=swap');
 /* ============================================================
    NASAKHI — Multi-storey Buildings Page
    multi-storey.css
@@ -11,7 +12,7 @@ html { scroll-behavior: smooth; }
 body {
   background: #0D0D0B;
   color: #EDE8DF;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Noto Sans Georgian', 'Work Sans', sans-serif;
   font-weight: 400;
   min-height: 100vh;
   overflow-x: hidden;
@@ -69,7 +70,7 @@ figure { margin: 0; }
 
 .nav-brand-name {
   display: block;
-  font-family: 'Fraunces', serif;
+  font-family: 'Noto Serif Georgian', 'Fraunces', serif;
   font-size: 22px;
   font-weight: 600;
   line-height: 1;
@@ -103,7 +104,7 @@ figure { margin: 0; }
   background: transparent;
   padding: 5px 0;
   color: #EDE8DF;
-  font: 500 12px 'Work Sans', sans-serif;
+  font: 500 12px 'Noto Sans Georgian', 'Work Sans', sans-serif;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   transition: color 0.2s;
@@ -133,7 +134,7 @@ figure { margin: 0; }
   display: block;
   padding: 10px 20px;
   color: #8A8578;
-  font: 400 12px 'Work Sans', sans-serif;
+  font: 400 12px 'Noto Sans Georgian', 'Work Sans', sans-serif;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   transition: color 0.2s;
@@ -198,7 +199,7 @@ figure { margin: 0; }
   padding: 10px 0;
   text-align: left;
   color: #EDE8DF;
-  font: 500 12px 'Work Sans', sans-serif;
+  font: 500 12px 'Noto Sans Georgian', 'Work Sans', sans-serif;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   width: 100%;
@@ -267,7 +268,7 @@ figure { margin: 0; }
 
 .hero-title {
   margin-top: 24px;
-  font-family: 'Fraunces', serif;
+  font-family: 'Noto Serif Georgian', 'Fraunces', serif;
   font-size: 60px;
   font-weight: 300;
   line-height: 0.72;
@@ -405,7 +406,7 @@ figure { margin: 0; }
 }
 
 .card-title {
-  font-family: 'Fraunces', serif;
+  font-family: 'Noto Serif Georgian', 'Fraunces', serif;
   font-size: 26px;
   font-weight: 300;
   line-height: 1;
@@ -464,7 +465,7 @@ figure { margin: 0; }
 }
 
 #site-header .logo-name {
-  font-family: 'Fraunces', serif;
+  font-family: 'Noto Serif Georgian', 'Fraunces', serif;
   font-size: 22px;
   font-weight: 500;
   color: #EDE8DF;
@@ -484,7 +485,7 @@ figure { margin: 0; }
   padding: 0;
   color: #EDE8DF;
   opacity: .85;
-  font: 500 13px 'Work Sans', sans-serif;
+  font: 500 13px 'Noto Sans Georgian', 'Work Sans', sans-serif;
   letter-spacing: .1em;
   text-transform: uppercase;
   transition: opacity .2s;
@@ -513,7 +514,7 @@ figure { margin: 0; }
   display: block;
   padding: 10px 24px;
   color: #8A8578;
-  font: 400 12px 'Work Sans', sans-serif;
+  font: 400 12px 'Noto Sans Georgian', 'Work Sans', sans-serif;
   letter-spacing: .08em;
   text-transform: uppercase;
   text-decoration: none;
@@ -526,7 +527,7 @@ figure { margin: 0; }
   color: #8A8578;
   background: none;
   border: 1px solid #2A2A25;
-  font: 500 11px 'Work Sans', sans-serif;
+  font: 500 11px 'Noto Sans Georgian', 'Work Sans', sans-serif;
   letter-spacing: .1em;
 }
 
@@ -559,7 +560,7 @@ figure { margin: 0; }
   color: #EDE8DF;
   background: none;
   border: none;
-  font: 500 14px 'Work Sans', sans-serif;
+  font: 500 14px 'Noto Sans Georgian', 'Work Sans', sans-serif;
   letter-spacing: .1em;
   text-align: left;
   text-transform: uppercase;

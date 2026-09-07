@@ -1,3 +1,4 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600&family=Noto+Serif+Georgian:wght@300;400;500;600&display=swap');
 /* ============================================================
    NASAKHI — Project Detail Page
    project-detail.css
@@ -11,7 +12,7 @@ html { scroll-behavior: smooth; }
 body {
   background: #0D0D0B;
   color: #EDE8DF;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Noto Sans Georgian', 'Work Sans', sans-serif;
   font-weight: 400;
   min-height: 100vh;
   overflow-x: hidden;
@@ -66,7 +67,7 @@ header.scrolled {
 }
 
 .logo-name {
-  font-family: 'Fraunces', serif;
+  font-family: 'Noto Serif Georgian', 'Fraunces', serif;
   font-size: 22px;
   font-weight: 500;
   color: #EDE8DF;
@@ -87,7 +88,7 @@ header.scrolled {
 
 .nav-btn {
   background: none; border: none; cursor: pointer;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Noto Sans Georgian', 'Work Sans', sans-serif;
   font-size: 13px; font-weight: 500;
   letter-spacing: .1em; text-transform: uppercase;
   color: #EDE8DF; opacity: .85;
@@ -130,7 +131,7 @@ header.scrolled {
   background: none;
   border: 1px solid #2A2A25;
   cursor: pointer;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Noto Sans Georgian', 'Work Sans', sans-serif;
   font-size: 11px; font-weight: 500;
   letter-spacing: .1em;
   color: #8A8578;
@@ -176,7 +177,7 @@ header.scrolled {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Noto Sans Georgian', 'Work Sans', sans-serif;
   cursor: pointer;
 }
 
@@ -281,7 +282,7 @@ header.scrolled {
 .detail-hero-text { max-width: 896px; }
 
 .detail-title {
-  font-family: 'Fraunces', serif;
+  font-family: 'Noto Serif Georgian', 'Fraunces', serif;
   font-size: clamp(4rem, 8vw, 8rem);
   font-weight: 300;
   line-height: 0.78;
