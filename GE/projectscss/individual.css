@@ -480,3 +480,15 @@ figure { margin: 0; }
   #site-header .nav-inner { padding: 0 16px; }
   #site-header .mobile-menu { padding: 18px 20px 24px; }
 }
+@font-face {
+  font-family: 'BPG Nino Mtavruli';
+  src: url('../fonts/bpg-nino-mtavruli-normal.otf') format('opentype');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+body,
+body * {
+  font-family: 'BPG Nino Mtavruli', sans-serif !important;
+}

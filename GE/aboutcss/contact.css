@@ -714,3 +714,15 @@ body {
     height: 2.75rem;
   }
 }
+@font-face {
+  font-family: 'BPG Nino Mtavruli';
+  src: url('../fonts/bpg-nino-mtavruli-normal.otf') format('opentype');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+body,
+body * {
+  font-family: 'BPG Nino Mtavruli', sans-serif !important;
+}

@@ -456,7 +456,7 @@ nav {
   font-family: var(--font-alt);
   color: var(--text);
   font-weight: 400;
-  font-size: 35px;
+  font-size: 34px;
   text-align: right;
   line-height: 1.12;
   letter-spacing: -.035em;
@@ -680,4 +680,16 @@ nav {
   .quote-section { padding: 60px 20px; }
   .quote-section p { font-size: 24px; }
   .site-footer { flex-direction: column; align-items: flex-start; }
+}
+@font-face {
+  font-family: 'BPG Nino Mtavruli';
+  src: url('../fonts/bpg-nino-mtavruli-normal.otf') format('opentype');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+body,
+body * {
+  font-family: 'BPG Nino Mtavruli', sans-serif !important;
 }
