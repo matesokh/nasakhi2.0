@@ -81,7 +81,7 @@ nav {
   gap: 2px;
 }
 .logo-name {
-  font-family: 'Noto Serif Georgian', 'Fraunces', serif;
+  font-family: 'Fraunces', serif;
   font-size: 22px;
   font-weight: 500;
   color: var(--fg);
@@ -287,6 +287,38 @@ nav {
   transition: background .2s;
 }
 .btn-primary:hover { background: var(--accent-lt); }
+
+@media (min-width: 961px) and (max-height: 950px) {
+  .hero-content {
+    padding-bottom: 180px;
+  }
+}
+
+@media (min-width: 961px) and (max-height: 800px) {
+  .hero-content {
+    padding-bottom: 120px;
+  }
+}
+
+@media (min-width: 961px) and (max-height: 700px) {
+  .hero-content {
+    padding-bottom: 60px;
+    gap: 14px;
+  }
+  .hero-desc:first-child {
+    margin-bottom: 4px !important;
+  }
+  .hero-title {
+    font-size: clamp(38px, 6vw, 64px);
+    margin-bottom: 8px;
+  }
+  .hero-desc {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+}
+
 .btn-ghost {
   display: inline-block;
   padding: 13px 36px;
@@ -828,7 +860,6 @@ textarea {
   font-family: 'Noto Sans Georgian', 'Work Sans', sans-serif;
 }
 
-.logo-name,
 .hero-title,
 .stat-num,
 .section-title,

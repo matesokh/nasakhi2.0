@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600&family=Noto+Serif+Georgian:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600&family=Noto+Serif+Georgian:wght@300;400;500;600&display=swap');
 /* ═══════════════════════════════════════════════
    FONTS
 ═══════════════════════════════════════════════ */
@@ -80,7 +80,7 @@ nav {
   gap: 2px;
 }
 .logo-name {
-  font-family: 'Noto Serif Georgian', 'Fraunces', serif;
+  font-family: 'Fraunces', serif;
   font-size: 22px;
   font-weight: 500;
   color: var(--text);

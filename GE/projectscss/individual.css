@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600&family=Noto+Serif+Georgian:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600&family=Noto+Serif+Georgian:wght@300;400;500;600&display=swap');
 /* ============================================================
    NASAKHI — Individual Homes Page
    individual-homes.css
@@ -409,7 +409,7 @@ figure { margin: 0; }
 .project-card:hover .card-title { color: #C4955A; }
 
 .card-location {
-  margin-top: 8px;
+  margin-top: 15px;
   font-size: 11px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -440,7 +440,7 @@ figure { margin: 0; }
 #site-header .nav-inner { max-width: 1400px; height: 72px; padding: 0 40px; }
 #site-header .logo { display: flex; align-items: center; text-decoration: none; }
 #site-header .logo-img { width: 70px; height: 70px; object-fit: contain; }
-#site-header .logo-name { font-family: 'Noto Serif Georgian', 'Fraunces', serif; font-size: 22px; font-weight: 500; color: #EDE8DF; letter-spacing: -.02em; line-height: 1; }
+#site-header .logo-name { font-family: 'Fraunces', serif; font-size: 22px; font-weight: 500; color: #EDE8DF; letter-spacing: -.02em; line-height: 1; }
 #site-header .desktop-nav { display: flex; align-items: center; gap: 40px; }
 #site-header .nav-item { position: relative; z-index: 2; }
 #site-header .nav-btn { padding: 0; color: #EDE8DF; opacity: .85; font: 500 13px 'Noto Sans Georgian', 'Work Sans', sans-serif; letter-spacing: .1em; text-transform: uppercase; transition: opacity .2s; }

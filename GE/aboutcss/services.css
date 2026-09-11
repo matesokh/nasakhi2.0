@@ -55,7 +55,7 @@
       gap: 2px;
     }
     .logo-name {
-      font-family: 'Noto Serif Georgian', 'Fraunces', serif;
+      font-family: 'Fraunces', serif;
       font-size: 22px;
       font-weight: 500;
       color: #EDE8DF;
@@ -265,7 +265,7 @@
       padding-bottom: 24px;
     }
     @media (min-width: 640px) {
-      .hero-content { padding-inline: 40px; padding-bottom: 32px; }
+      .hero-content { padding-inline: 40px; padding-bottom: 20px; }
     }
 
     .hero-content h1 {
@@ -305,7 +305,7 @@
     }
     .services-bar p {
       text-align: center;
-      font-size: 13px;
+      font-size: 15px;
       font-weight: 700;
       line-height: 1.4;
       color: #EDE8DF;

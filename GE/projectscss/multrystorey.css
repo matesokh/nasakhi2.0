@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600&family=Noto+Serif+Georgian:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600&family=Noto+Serif+Georgian:wght@300;400;500;600&display=swap');
 /* ============================================================
    NASAKHI — Multi-storey Buildings Page
    multi-storey.css
@@ -418,7 +418,7 @@ figure { margin: 0; }
 .project-card:hover .card-title { color: #C4955A; }
 
 .card-location {
-  margin-top: 8px;
+  margin-top: 15px;
   font-size: 11px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -465,7 +465,7 @@ figure { margin: 0; }
 }
 
 #site-header .logo-name {
-  font-family: 'Noto Serif Georgian', 'Fraunces', serif;
+  font-family: 'Fraunces', serif;
   font-size: 22px;
   font-weight: 500;
   color: #EDE8DF;

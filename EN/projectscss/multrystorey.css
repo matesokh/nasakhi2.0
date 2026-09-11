@@ -417,7 +417,7 @@ figure { margin: 0; }
 .project-card:hover .card-title { color: #C4955A; }
 
 .card-location {
-  margin-top: 8px;
+  margin-top: 15px;
   font-size: 11px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
