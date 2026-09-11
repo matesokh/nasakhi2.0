@@ -111,7 +111,7 @@
         </div>
       </div>
       <a href="../about/contact.html" class="mobile-link">Contact</a>
-    </div>
+      <a href="../../GE/about/services.html" class="mobile-link">GE</a></div>
   </header>
 
   <main>
@@ -352,7 +352,12 @@
     }
   </script>
 
-<script data-language-link="ge">document.getElementById('lang-btn').addEventListener('click', () => { window.location.href = window.location.href.replace('/EN/', '/GE/') })</script>
+<script data-language-link="ge">document.querySelectorAll('#lang-btn').forEach((button) => { button.addEventListener('click', () => { window.location.href = window.location.href.replace('/EN/', '/GE/') }) })</script>
 </body>
 </html>
+
+
+
+
+
 

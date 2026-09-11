@@ -276,12 +276,20 @@
       letter-spacing: -0.075em;
       padding-top: 24px;
     }
-    @media (min-width: 640px) { .hero-content h1 { padding-top: 32px; } }
+    @media (min-width: 640px) { .hero-content h1 { padding-top: 32px;} }
     .hero-content h1 em {
       font-style: italic;
       font-weight: 300;
       color: #C4955A;
     }
+
+    @media (max-width: 590px) { 
+      .hero-content  h1 {
+        font-size: 75px;
+      }
+   }
+
+
 
     .services-bar {
       display: grid;
@@ -301,6 +309,28 @@
       font-weight: 700;
       line-height: 1.4;
       color: #EDE8DF;
+    }
+
+    @media (max-width: 460px) {
+      .hero {
+        min-height: 0;
+      }
+
+      .hero-content {
+        min-height: 0;
+        padding-bottom: 24px;
+      }
+
+      .hero-content > div:first-child {
+        padding-top: 16px !important;
+      }
+
+      .hero-content h1 {
+        max-width: 100%;
+        font-size: clamp(3rem, 14vw, 4rem);
+        line-height: 0.95;
+        overflow-wrap: anywhere;
+      }
     }
 
     /* ── SECTION 2: DESCRIPTION ─────────────────────────── */
@@ -427,7 +457,7 @@
       margin-top: 0;
       height: auto;
       max-width: none;
-      font-size: 12px;
+      font-size: 14px;
       line-height: 1.5;
       color: #B6B0A6;
     }

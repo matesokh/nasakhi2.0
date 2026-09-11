@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ka">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Akhal Kalaki</title>
+  <link rel="icon" type="image/png" href="../images/axali%20logo.png" />
+  <title>ახალქალაქი</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -120,7 +121,7 @@
 
       <a href="../about/services.html" class="mobile-link">სერვისები</a>
       <a href="../about/contact.html" class="mobile-link">კონტაქტი</a>
-    </div>
+      <a href="../../EN/multystoreyprojects/axalqalaqinewmax.html" class="mobile-link">EN</a></div>
   </header>
 
 <main class="main-wrap">
@@ -131,7 +132,7 @@
         <a href="../projects/multystorey.html" class="detail-back" aria-label="მრავალბინიანი შენობების პროექტებზე დაბრუნება"></a>
         <div class="detail-hero-text">
           <h1 class="detail-title">მრავალსართულიანი შენობა</h1>
-          <p class="detail-subtitle">Akhalkalaki</p>
+          <p class="detail-subtitle">ახალქალაქი</p>
         </div>
       </div>
     </section>
@@ -142,7 +143,7 @@
         <dl class="profile-list">
           <div class="profile-row">
             <dt>მდებარეობა</dt>
-            <dd>Akhalkalaki</dd>
+            <dd>ახალქალაქი</dd>
           </div>
           <div class="profile-row">
             <dt>კატეეტორია</dt>
@@ -287,8 +288,13 @@
   if (e.target === lightbox) closeLightbox()
 })
 </script>
-<script data-language-link="en">document.getElementById('lang-btn').addEventListener('click', () => { window.location.href = window.location.href.replace('/GE/', '/EN/') })</script>
+<script data-language-link="en">document.querySelectorAll('#lang-btn').forEach((button) => { button.addEventListener('click', () => { window.location.href = window.location.href.replace('/GE/', '/EN/') }) })</script>
 </body>
 
 </html>
+
+
+
+
+
 

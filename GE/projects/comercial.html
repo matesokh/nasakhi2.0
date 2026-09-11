@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nasakhi â€” კომერციული შენობები</title>
+  <title>კომერციული შენობები</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -39,7 +39,7 @@
         </div>
         <div class="nav-item"><button class="nav-btn" type="button"><a href="../about/services.html" class="nav-anchor">სერვისები</a></button></div>
         <div class="nav-item"><button class="nav-btn" type="button"><a href="../about/contact.html" class="nav-anchor">კონტაქტი</a></button></div>
-        <button class="lang-btn" id="lang-btn" type="button">GE</button>
+        <button class="lang-btn" id="lang-btn" type="button">EN</button>
       </div>
 
       <button class="hamburger" id="hamburger" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
@@ -68,7 +68,7 @@
       </div>
       <a href="../about/services.html" class="mobile-link">სერვისები</a>
       <a href="../about/contact.html" class="mobile-link">კონტაქტი</a>
-    </div>
+      <a href="../../EN/projects/comercial.html" class="mobile-link">EN</a></div>
   </header>
 
   <!-- MAIN: PROJECT INDEX -->
@@ -164,8 +164,8 @@
             <span class="card-hover-label">პროექტის ნახვა</span>
           </figure>
           <div class="card-info">
-            <h2 class="card-title">წუწყვათის სკოლა</h2>
-            <p class="card-location">წუწყვათი, საქართველო</p>
+            <h2 class="card-title">ცუცხვათის სკოლა</h2>
+            <p class="card-location">ცუცხვათი, საქართველო</p>
           </div>
         </a>
 
@@ -370,8 +370,12 @@
       });
     });
   </script>
-<script data-language-link="en">document.getElementById('lang-btn').addEventListener('click', () => { window.location.href = window.location.href.replace('/GE/', '/EN/') })</script>
+<script data-language-link="en">document.querySelectorAll('#lang-btn').forEach((button) => { button.addEventListener('click', () => { window.location.href = window.location.href.replace('/GE/', '/EN/') }) })</script>
 </body>
 </html>
+
+
+
+
 
 

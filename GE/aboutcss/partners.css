@@ -302,6 +302,27 @@ body {
   color: #C4955A;
 }
 
+@media (max-width: 460px) {
+  .hero {
+    padding-top: 112px;
+    padding-bottom: 48px;
+  }
+
+  .hero-copy,
+  .hero-title,
+  .hero-desc {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .hero-title {
+    max-width: 100%;
+    font-size: clamp(2.75rem, 13vw, 3.5rem);
+    line-height: 0.92;
+    overflow-wrap: anywhere;
+  }
+}
+
 .hero-desc {
   max-width: 384px;
   border-left: 1px solid #C4955A;

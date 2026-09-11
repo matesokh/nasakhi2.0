@@ -114,7 +114,7 @@
 
       <a href="about/services.html" class="mobile-link">Services</a>
       <a href="about/contact.html" class="mobile-link">Contact</a>
-    </div>
+     <a href="../GE/index.html" class="mobile-link">GE</a></div>
   </header>
 
   <section id="top">
@@ -382,8 +382,13 @@
       e.target.innerHTML = '<div style="border:1px solid #2A2A25;padding:60px 48px;text-align:center"><div style="font-family:\'Fraunces\',serif;font-size:32px;font-weight:300;color:#C4955A">Message sent.</div><p style="font-size:14px;color:#8A8578;margin-top:16px;line-height:1.7">We\'ll be in touch within 24 hours.</p></div>'
     }
   </script>
-<script data-language-link="ge">document.getElementById('lang-btn').addEventListener('click', () => { window.location.href = window.location.href.replace('/EN/', '/GE/') })</script>
+<script data-language-link="ge">document.querySelectorAll('#lang-btn').forEach((button) => { button.addEventListener('click', () => { window.location.href = window.location.href.replace('/EN/', '/GE/') }) })</script>
 </body>
 
 </html>
+
+
+
+
+
 

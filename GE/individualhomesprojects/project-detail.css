@@ -283,13 +283,17 @@ header.scrolled {
 
 .detail-title {
   font-family: 'Noto Serif Georgian', 'Fraunces', serif;
-  font-size: clamp(4rem, 8vw, 8rem);
+  font-size: clamp(4rem, 8vw, 5.5rem);
   font-weight: 300;
   line-height: 0.78;
   letter-spacing: -0.07em;
   color: #EDE8DF;
+  margin-top: 25px;
 }
 
+@media (max-width: 640px) {
+  .detail-title{ font-size: 45px; }
+}
 .detail-subtitle {
   margin-top: 24px;
   font-size: 14px;
