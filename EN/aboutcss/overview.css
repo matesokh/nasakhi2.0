@@ -535,6 +535,15 @@ nav {
   color: snow;
 }
 
+.footer-text a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-text a:hover {
+  color: #ffffff;
+}
+
 .footer-text--muted {
   color: rgba(255, 255, 255, 0.3);
 }

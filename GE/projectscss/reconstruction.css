@@ -489,3 +489,7 @@ body,
 body * {
   font-family: 'BPG Nino Mtavruli', sans-serif !important;
 }
+
+.logo-name {
+  font-family: 'Fraunces', serif !important;
+}

@@ -238,7 +238,26 @@ nav {
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
+  animation: hero-content-enter 1.25s cubic-bezier(.16, 1, .3, 1) both;
 }
+
+@keyframes hero-content-enter {
+  from {
+    opacity: 0;
+    transform: translateX(-64px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-content {
+    animation: none;
+  }
+}
+
 .hero-label {
   font-size: 11px; font-weight: 500;
   letter-spacing: .25em; text-transform: uppercase;
@@ -791,6 +810,15 @@ nav {
 
 .footer-text {
   color: snow;
+}
+
+.footer-text a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-text a:hover {
+  color: #ffffff;
 }
 
 .footer-text--muted {

@@ -412,7 +412,7 @@ nav {
 .card-info {
   display: grid;
   grid-template-columns: minmax(0,1fr) minmax(135px,40%);
-  align-items: start;
+  align-items: center;
   gap: 18px;
   min-height: 108px;
   padding: 18px 4px 4px;
@@ -555,6 +555,15 @@ nav {
   color: snow;
 }
 
+.footer-text a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-text a:hover {
+  color: #ffffff;
+}
+
 .footer-text--muted {
   color: rgba(255, 255, 255, 0.3);
 }
@@ -692,4 +701,8 @@ nav {
 body,
 body * {
   font-family: 'BPG Nino Mtavruli', sans-serif !important;
+}
+
+.logo-name {
+  font-family: 'Fraunces', serif !important;
 }
