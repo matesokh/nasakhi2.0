@@ -262,6 +262,7 @@ header.scrolled {
 
 .detail-back {
   position: relative;
+  bottom: 35px;
   z-index: 1;
   display: flex;
   align-items: center;
@@ -274,7 +275,7 @@ header.scrolled {
   text-decoration: none;
 }
 
-.detail-back::before { content: "←"; }
+.detail-back::before { content: "Back"; }
 
 .detail-back:hover { color: #EDE8DF; }
 
