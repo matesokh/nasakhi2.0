@@ -154,7 +154,7 @@
         <div class="stat-label">Completed In 2026</div>
       </div>
       <div class="stat">
-        <div class="stat-num" data-count="1000000" data-suffix="+">0+</div>
+        <div class="stat-num stat-num--featured" data-count="2000000" data-suffix="+">0+</div>
         <div class="stat-label">Projected area</div>
       </div>
     </div>
@@ -205,13 +205,13 @@
         <div class="section-eyebrow">Selected Work</div>
         <h2 class="section-title">Projects</h2>
       </div>
-      <a href="#" style=" font-size: 12px; font-weight: 500;
+      <p  style=" font-size: 12px; font-weight: 500;
   letter-spacing: .1em; text-transform: uppercase;
   color: var(--muted); text-decoration: none;
   display: flex; align-items: center; gap: 10px;
   transition: color .2s;">
         All Projects
-      </a>
+      </p>
     </div>
     <div class="projects-grid">
       <div class="project-card">
@@ -358,6 +358,7 @@
     })
 
     const statNums = document.querySelectorAll('.stat-num[data-count]')
+    const formatStatNumber = (value) => new Intl.NumberFormat('en-US').format(value)
     const animateStat = (el) => {
       const target = parseInt(el.dataset.count, 10)
       const suffix = el.dataset.suffix || ''
@@ -366,7 +367,8 @@
       const step = (now) => {
         const progress = Math.min((now - start) / duration, 1)
         const eased = 1 - Math.pow(1 - progress, 3)
-        el.textContent = Math.round(eased * target) + suffix
+        const currentValue = Math.round(eased * target)
+        el.textContent = formatStatNumber(currentValue) + suffix
         if (progress < 1) requestAnimationFrame(step)
       }
       requestAnimationFrame(step)

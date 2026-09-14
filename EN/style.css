@@ -368,6 +368,10 @@ nav {
   color: var(--fg); line-height: 1;
   margin-bottom: 6px;
 }
+.stat-num--featured {
+  font-weight: 600;
+  letter-spacing: -0.04em;
+}
 .stat-label {
   font-size: 13px; font-weight: 400;
   letter-spacing: .15em; text-transform: uppercase;
