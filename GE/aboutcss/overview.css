@@ -646,6 +646,27 @@ nav {
 @media (max-width: 640px) {
   .hero { min-height: 40vh; }
   .hero-side-label { display: none; }
+  .tools-grid {
+    grid-template-columns: 1fr;
+    padding: 0 24px;
+  }
+  .tool-item,
+  .tool-mid,
+  .tool-last {
+    min-width: 0;
+    padding: 24px 12px;
+  }
+  .tool-mid {
+    border-left: 0;
+    border-right: 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .tool-desc {
+    line-height: 1.5;
+    letter-spacing: .08em;
+    overflow-wrap: anywhere;
+  }
   .cta-heading { padding: 40px 0; }
   .site-footer { flex-direction: column; align-items: flex-start; gap: 20px; }
   .footer-links { flex-wrap: wrap; gap: 16px; }

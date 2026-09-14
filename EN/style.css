@@ -367,6 +367,7 @@ nav {
   font-size: 45px; font-weight: 300;
   color: var(--fg); line-height: 1;
   margin-bottom: 6px;
+  white-space: nowrap;
 }
 .stat-num--featured {
   font-weight: 600;
